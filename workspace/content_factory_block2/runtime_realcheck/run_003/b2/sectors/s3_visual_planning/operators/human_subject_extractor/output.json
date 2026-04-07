@@ -1,0 +1,60 @@
+{
+  "contract_version": "s3.human_subject.output.v1",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realrun_human_subject_extractor_001",
+  "video_id": "realcheck_video_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "h1",
+      "entity_type": "person",
+      "canonical_label": "Luís XIV",
+      "scene_ids": [
+        "scene_001",
+        "scene_002",
+        "scene_003"
+      ],
+      "visual_relevance_note": "main historical figure"
+    },
+    {
+      "entity_id": "h2",
+      "entity_type": "person",
+      "canonical_label": "Madame de Maintenon",
+      "scene_ids": [
+        "scene_002"
+      ],
+      "visual_relevance_note": "central historical figure"
+    },
+    {
+      "entity_id": "h3",
+      "entity_type": "group",
+      "canonical_label": "cortesãos",
+      "scene_ids": [
+        "scene_001",
+        "scene_002"
+      ],
+      "visual_relevance_note": "background observers"
+    },
+    {
+      "entity_id": "h4",
+      "entity_type": "group",
+      "canonical_label": "membros da corte",
+      "scene_ids": [
+        "scene_002"
+      ],
+      "visual_relevance_note": "background audience"
+    },
+    {
+      "entity_id": "h5",
+      "entity_type": "group",
+      "canonical_label": "nobres",
+      "scene_ids": [
+        "scene_003"
+      ],
+      "visual_relevance_note": "debating group"
+    }
+  ],
+  "generated_at": "2026-04-03T16:21:00.000000+00:00"
+}

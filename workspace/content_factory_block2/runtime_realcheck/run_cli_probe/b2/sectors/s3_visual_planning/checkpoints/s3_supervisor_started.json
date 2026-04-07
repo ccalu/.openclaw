@@ -1,0 +1,6 @@
+{
+  "event": "s3_supervisor_started",
+  "job_id": "real_supervisor_cli_001",
+  "started_at": "2026-04-03T17:46:35.773124+00:00",
+  "bootstrap_path": "runtime_realcheck\\run_cli_probe\\s3_supervisor_bootstrap.json"
+}

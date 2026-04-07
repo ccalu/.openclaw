@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.evaluated_candidate_set.v1",
+  "title": "S4 Evaluated Candidate Set",
+  "description": "Candidates after evaluation and classification.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "target_id",
+    "canonical_label",
+    "target_type",
+    "scene_ids",
+    "evaluated_candidates",
+    "best_candidate_ids",
+    "evaluator_notes",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.evaluated_candidate_set.v1"
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_type": {
+      "type": "string",
+      "enum": [
+        "person_historical",
+        "location_historical",
+        "object_artifact",
+        "architectural_anchor",
+        "interior_space",
+        "symbolic_sequence",
+        "event_reference",
+        "environment_reference"
+      ]
+    },
+    "scene_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evaluated_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "final_classification",
+          "target_fitness_note",
+          "downstream_usefulness_note",
+          "asset_usability_note",
+          "is_best_candidate"
+        ],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "final_classification": {
+            "type": "string",
+            "enum": [
+              "factual_evidence",
+              "visual_reference",
+              "stylistic_inspiration",
+              "reject"
+            ]
+          },
+          "target_fitness_note": { "type": "string" },
+          "downstream_usefulness_note": { "type": "string" },
+          "asset_usability_note": { "type": "string" },
+          "is_best_candidate": { "type": "boolean" }
+        }
+      }
+    },
+    "best_candidate_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evaluator_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,5 @@
+{
+  "video_context": {"title": "Director Active Bootstrap Probe"},
+  "script_overview": {"summary": "Bootstrap validation where B2 state does not yet exist."},
+  "scenes": [{"scene_id": "scene_001", "title": "Opening", "summary": "A king enters the palace."}]
+}

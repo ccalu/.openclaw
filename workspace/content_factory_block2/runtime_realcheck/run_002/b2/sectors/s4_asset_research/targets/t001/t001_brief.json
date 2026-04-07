@@ -1,0 +1,37 @@
+{
+  "contract_version": "s4.target_research_brief.v1",
+  "job_id": "test_s4_job",
+  "batch_id": "batch_001",
+  "target_id": "t001",
+  "canonical_label": "Coroa",
+  "target_type": "object_artifact",
+  "scene_ids": [
+    "scene_001"
+  ],
+  "research_modes": [
+    "visual_reference",
+    "factual_evidence"
+  ],
+  "priority": "medium",
+  "search_goals": [
+    "Find reference images of 'Coroa'",
+    "Find historical context and provenance of 'Coroa'"
+  ],
+  "research_needs": [
+    "Reference images of Coroa",
+    "Historical context and visual details of Coroa"
+  ],
+  "source_entity_ids": [
+    "o1"
+  ],
+  "storage_paths": {
+    "target_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001",
+    "candidate_set_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\t001_candidate_set.json",
+    "assets_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\assets",
+    "previews_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\previews",
+    "captures_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\captures"
+  },
+  "output_contract": "s4.candidate_set.v1",
+  "notes": [],
+  "warnings": []
+}

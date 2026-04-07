@@ -1,0 +1,18 @@
+{
+  "contract_version": "s4.candidate_set.v1",
+  "target_id": "t001",
+  "canonical_label": "Coroa",
+  "target_type": "object_artifact",
+  "scene_ids": [
+    "scene_001"
+  ],
+  "candidates": [],
+  "worker_notes": [
+    "query 'Coroa reference images' -> 0 results",
+    "query 'Coroa historical artifact' -> 0 results",
+    "total unique results: 0"
+  ],
+  "warnings": [
+    "no candidates found from any search query"
+  ]
+}

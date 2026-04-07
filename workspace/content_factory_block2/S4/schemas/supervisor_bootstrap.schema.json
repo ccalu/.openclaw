@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.supervisor_bootstrap.v1",
+  "title": "S4 Supervisor Bootstrap",
+  "description": "Bootstrap payload for the S4 Asset Research supervisor.",
+  "type": "object",
+  "required": [
+    "kind",
+    "contract_version",
+    "job_id",
+    "video_id",
+    "run_root",
+    "b2_root",
+    "sector_root",
+    "account_id",
+    "language",
+    "upstream",
+    "checkpoints_dir",
+    "dispatch_dir",
+    "intake_dir",
+    "targets_dir",
+    "compiled_dir",
+    "logs_dir",
+    "runtime_dir"
+  ],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "const": "s4_start"
+    },
+    "contract_version": {
+      "type": "string",
+      "const": "s4.supervisor_bootstrap.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "video_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "b2_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sector_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "account_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 5
+    },
+    "upstream": {
+      "type": "object",
+      "required": ["compiled_entities_path"],
+      "properties": {
+        "compiled_entities_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sector_report_path": {
+          "type": "string"
+        }
+      }
+    },
+    "checkpoints_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dispatch_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intake_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "targets_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "compiled_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "logs_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime_dir": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

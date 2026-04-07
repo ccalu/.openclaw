@@ -1,0 +1,8 @@
+{
+  "event": "operator_checkpoint",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realrun_supervisor_005",
+  "status": "completed",
+  "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_005\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json",
+  "generated_at": "2026-04-03T16:31:20+00:00"
+}

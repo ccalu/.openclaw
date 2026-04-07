@@ -1,0 +1,32 @@
+{
+  "contract_version": "s3.object_artifact.output.v1",
+  "operator_name": "object_artifact_extractor",
+  "job_id": "all_ops_cli_001",
+  "video_id": "all_ops_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "o1",
+      "entity_type": "artifact",
+      "canonical_label": "crown",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "specificity": "specific",
+      "visual_relevance_note": "Royal headpiece worn by the king; a primary visible prop in the opening scene."
+    },
+    {
+      "entity_id": "o2",
+      "entity_type": "prop",
+      "canonical_label": "banners",
+      "scene_ids": [
+        "scene_002"
+      ],
+      "specificity": "general",
+      "visual_relevance_note": "Large civic or ceremonial banners wave over the city during the storm scene."
+    }
+  ],
+  "generated_at": "2026-04-03T17:09:46.713061+00:00"
+}

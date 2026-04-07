@@ -1,0 +1,8 @@
+{
+  "kind": "b2_resume",
+  "contract_version": "b2.resume.v1",
+  "run_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_010",
+  "b2_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_010\\b2",
+  "reason": "s3_completed",
+  "trigger_artifact": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_010\\b2\\checkpoints\\s3_completed.json"
+}

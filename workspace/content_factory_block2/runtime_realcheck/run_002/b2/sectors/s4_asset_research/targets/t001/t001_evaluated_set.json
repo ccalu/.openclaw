@@ -1,0 +1,13 @@
+{
+  "contract_version": "s4.evaluated_candidate_set.v1",
+  "target_id": "t001",
+  "canonical_label": "Coroa",
+  "target_type": "object_artifact",
+  "scene_ids": [
+    "scene_001"
+  ],
+  "evaluated_candidates": [],
+  "best_candidate_ids": [],
+  "evaluator_notes": [],
+  "warnings": []
+}

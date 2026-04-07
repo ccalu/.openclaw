@@ -1,0 +1,20 @@
+{
+  "video_context": {
+    "title": "All Operators Real Validation"
+  },
+  "script_overview": {
+    "summary": "Validate one real run for each S3 operator via CLI primitive."
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "title": "Opening",
+      "summary": "A king enters the palace wearing a crown."
+    },
+    {
+      "scene_id": "scene_002",
+      "title": "Storm",
+      "summary": "Thunder over the city as banners wave."
+    }
+  ]
+}

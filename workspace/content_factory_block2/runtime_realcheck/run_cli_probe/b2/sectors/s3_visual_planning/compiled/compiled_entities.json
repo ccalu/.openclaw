@@ -1,0 +1,57 @@
+{
+  "sector": "s3_visual_planning",
+  "contract_version": "s3.compiled_entities.v1",
+  "job_id": "real_supervisor_cli_001",
+  "video_id": "real_supervisor_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "degraded_completed",
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "sources": {
+    "source_package_path": "runtime_realcheck\\run_cli_probe\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json"
+  },
+  "operators": {
+    "human_subject_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_cli_probe\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json"
+    },
+    "environment_location_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_cli_probe\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\output.json"
+    },
+    "object_artifact_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_cli_probe\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\output.json"
+    },
+    "symbolic_event_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_cli_probe\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\output.json"
+    }
+  },
+  "compiled_entities": {
+    "human_subjects": [
+      {
+        "entity_id": "h1",
+        "entity_type": "person",
+        "canonical_label": "king",
+        "scene_ids": [
+          "scene_001"
+        ],
+        "visual_relevance_note": "main figure"
+      }
+    ],
+    "environment_locations": [],
+    "object_artifacts": [],
+    "symbolic_events": []
+  },
+  "compile_notes": [],
+  "warnings": [
+    "missing output for environment_location_extractor",
+    "missing output for object_artifact_extractor",
+    "missing output for symbolic_event_extractor"
+  ],
+  "generated_at": "2026-04-03T17:47:07.486971+00:00"
+}

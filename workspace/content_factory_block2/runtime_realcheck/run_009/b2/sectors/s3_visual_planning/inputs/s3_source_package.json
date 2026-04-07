@@ -1,0 +1,44 @@
+{
+  "contract_version": "s3_source_package.v1",
+  "job_id": "realrun_supervisor_exec_009",
+  "video_id": "realrun_supervisor_exec_009",
+  "account_id": "006",
+  "language": "pt-BR",
+  "video_context": {
+    "video_name": "realrun_supervisor_exec_009",
+    "title": "Supervisor Exec Run 009",
+    "description": "",
+    "account_id": "006",
+    "language": "pt-BR"
+  },
+  "script_overview": {
+    "full_word_count": null,
+    "total_scenes": 3,
+    "source_row": null
+  },
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "inputs": {
+    "screenplay_analysis_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\upstream\\screenplay_analysis.json"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "Luís XIV walks through Versailles as courtiers watch."
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "Madame de Maintenon accompanies the king in a private ceremony."
+    },
+    {
+      "scene_id": "scene_003",
+      "scene_number": 3,
+      "text": "Nobles debate the future of France after the king dies."
+    }
+  ],
+  "generated_at": "2026-04-03T17:40:40.596743+00:00"
+}

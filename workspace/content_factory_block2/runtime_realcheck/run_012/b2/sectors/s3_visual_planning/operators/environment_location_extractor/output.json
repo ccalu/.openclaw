@@ -1,0 +1,240 @@
+{
+  "contract_version": "s3.environment_location.output.v1",
+  "operator_name": "environment_location_extractor",
+  "job_id": "all_ops_cli_001",
+  "video_id": "all_ops_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "source_package_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "derived_from_video_base": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "generated_at": "2026-04-03T17:33:00.000000+00:00",
+  "status": "completed",
+  "entity_focus": {
+    "families": [
+      "locations",
+      "places",
+      "environments",
+      "settings"
+    ],
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "entities": [
+    {
+      "entity_id": "loc_001",
+      "entity_type": "location",
+      "name": "palace",
+      "specific_name": "royal palace interior",
+      "classification": "interior",
+      "confidence": 0.98,
+      "evidence": [
+        "A king enters the palace wearing a crown."
+      ],
+      "scene_refs": [
+        "scene_001"
+      ],
+      "attributes": [
+        "royal",
+        "architectural",
+        "formal"
+      ]
+    },
+    {
+      "entity_id": "loc_002",
+      "entity_type": "location",
+      "name": "city",
+      "specific_name": "stormy urban exterior",
+      "classification": "urban_exterior",
+      "confidence": 0.97,
+      "evidence": [
+        "Thunder over the city as banners wave."
+      ],
+      "scene_refs": [
+        "scene_002"
+      ],
+      "attributes": [
+        "urban",
+        "open_air",
+        "ceremonial"
+      ]
+    },
+    {
+      "entity_id": "env_001",
+      "entity_type": "environment",
+      "name": "royal palace interior",
+      "location_ref": "loc_001",
+      "confidence": 0.97,
+      "scene_refs": [
+        "scene_001"
+      ],
+      "architectural_context": "palace architecture implied by the king entering the palace",
+      "notes": [
+        "Royal setting",
+        "Indoor monumental space"
+      ]
+    },
+    {
+      "entity_id": "env_002",
+      "entity_type": "environment",
+      "name": "stormy urban exterior",
+      "location_ref": "loc_002",
+      "confidence": 0.96,
+      "scene_refs": [
+        "scene_002"
+      ],
+      "architectural_context": "city context with visible banners and weather activity",
+      "notes": [
+        "Exterior city atmosphere",
+        "Weather-driven dramatic setting"
+      ]
+    },
+    {
+      "entity_id": "set_001",
+      "entity_type": "setting",
+      "name": "royal entry into the palace",
+      "location_ref": "loc_001",
+      "confidence": 0.95,
+      "scene_refs": [
+        "scene_001"
+      ]
+    },
+    {
+      "entity_id": "set_002",
+      "entity_type": "setting",
+      "name": "city under thunder with banners",
+      "location_ref": "loc_002",
+      "confidence": 0.94,
+      "scene_refs": [
+        "scene_002"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "loc_001",
+      "name": "palace",
+      "type": "interior",
+      "confidence": 0.98,
+      "evidence": [
+        "A king enters the palace wearing a crown."
+      ],
+      "scene_refs": [
+        "scene_001"
+      ],
+      "attributes": [
+        "royal",
+        "architectural",
+        "formal"
+      ]
+    },
+    {
+      "location_id": "loc_002",
+      "name": "city",
+      "type": "urban_exterior",
+      "confidence": 0.97,
+      "evidence": [
+        "Thunder over the city as banners wave."
+      ],
+      "scene_refs": [
+        "scene_002"
+      ],
+      "attributes": [
+        "urban",
+        "open_air",
+        "ceremonial"
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "environment_id": "env_001",
+      "name": "royal palace interior",
+      "location_ref": "loc_001",
+      "confidence": 0.97,
+      "scene_refs": [
+        "scene_001"
+      ],
+      "architectural_context": "palace architecture implied by the king entering the palace",
+      "notes": [
+        "Royal setting",
+        "Indoor monumental space"
+      ]
+    },
+    {
+      "environment_id": "env_002",
+      "name": "stormy urban exterior",
+      "location_ref": "loc_002",
+      "confidence": 0.96,
+      "scene_refs": [
+        "scene_002"
+      ],
+      "architectural_context": "city context with visible banners and weather activity",
+      "notes": [
+        "Exterior city atmosphere",
+        "Weather-driven dramatic setting"
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "setting_id": "set_001",
+      "name": "royal entry into the palace",
+      "location_ref": "loc_001",
+      "confidence": 0.95,
+      "scene_refs": [
+        "scene_001"
+      ]
+    },
+    {
+      "setting_id": "set_002",
+      "name": "city under thunder with banners",
+      "location_ref": "loc_002",
+      "confidence": 0.94,
+      "scene_refs": [
+        "scene_002"
+      ]
+    }
+  ],
+  "merged_variants": [
+    {
+      "canonical_name": "palace",
+      "variants": [
+        "royal palace interior",
+        "palace architecture"
+      ]
+    },
+    {
+      "canonical_name": "city",
+      "variants": [
+        "urban exterior",
+        "stormy urban exterior"
+      ]
+    }
+  ],
+  "scene_coverage": [
+    {
+      "scene_id": "scene_001",
+      "location_refs": [
+        "loc_001"
+      ],
+      "environment_refs": [
+        "env_001"
+      ],
+      "setting_refs": [
+        "set_001"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "location_refs": [
+        "loc_002"
+      ],
+      "environment_refs": [
+        "env_002"
+      ],
+      "setting_refs": [
+        "set_002"
+      ]
+    }
+  ]
+}

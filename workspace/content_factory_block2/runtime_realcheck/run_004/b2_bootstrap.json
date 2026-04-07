@@ -1,0 +1,15 @@
+{
+  "kind": "b2_start",
+  "contract_version": "b2.bootstrap.v1",
+  "job_id": "realrun_human_subject_extractor_001",
+  "video_id": "realcheck_video_001",
+  "run_root": "runtime_realcheck\\run_004",
+  "b2_root": "runtime_realcheck\\run_004\\b2",
+  "account_id": "006",
+  "language": "pt-BR",
+  "inputs": {
+    "screenplay_analysis_path": "runtime_realcheck\\run_004\\upstream\\screenplay_analysis.json",
+    "script_fetched_checkpoint_path": "runtime_realcheck\\run_004\\upstream\\01_script_fetched.json"
+  },
+  "mode": "s3_only"
+}

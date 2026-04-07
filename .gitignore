@@ -1,0 +1,15 @@
+# Heavy/unnecessary dirs
+workspace/openclaw-nerve/
+media/
+completions/
+logs/
+delivery-queue/
+
+# Runtime/temp
+__pycache__/
+*.pyc
+*.tmp
+
+# Backups
+openclaw.json.bak*
+openclaw.json.clobbered*

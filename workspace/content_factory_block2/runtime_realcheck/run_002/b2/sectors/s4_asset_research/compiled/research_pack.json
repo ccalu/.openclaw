@@ -1,0 +1,44 @@
+{
+  "contract_version": "s4.research_pack.v1",
+  "metadata": {
+    "job_id": "test_s4_job",
+    "video_id": "test_video",
+    "account_id": "006",
+    "language": "pt",
+    "sector": "s4_asset_research",
+    "generated_at": "2026-04-04T22:07:57.723912+00:00",
+    "status": "unresolved"
+  },
+  "target_results": [
+    {
+      "target_id": "t001",
+      "canonical_label": "Coroa",
+      "best_factual_evidence_ids": [],
+      "best_visual_reference_ids": [],
+      "best_stylistic_inspiration_ids": [],
+      "coverage_state": "unresolved",
+      "notes": "no candidates evaluated"
+    }
+  ],
+  "scene_results": [
+    {
+      "scene_id": "scene_001",
+      "linked_target_ids": [
+        "t001"
+      ],
+      "recommended_candidate_ids": [],
+      "coverage_state": "unresolved",
+      "notes": "derived from 1 target(s): unresolved"
+    }
+  ],
+  "asset_manifest": [],
+  "preview_manifest": [],
+  "capture_manifest": [],
+  "unresolved_gaps": [
+    "target t001: unresolved - no candidates evaluated",
+    "scene scene_001: unresolved - derived from 1 target(s): unresolved"
+  ],
+  "warnings": [
+    "no targets fully covered"
+  ]
+}

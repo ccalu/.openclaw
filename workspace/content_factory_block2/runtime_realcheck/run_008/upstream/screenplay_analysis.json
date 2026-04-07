@@ -1,0 +1,15 @@
+{
+  "video_context": {
+    "title": "Supervisor CLI Narrow Run"
+  },
+  "script_overview": {
+    "summary": "Narrow run for real supervisor->operator CLI path"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "title": "Opening",
+      "summary": "A palace scene with a king and a crown."
+    }
+  ]
+}

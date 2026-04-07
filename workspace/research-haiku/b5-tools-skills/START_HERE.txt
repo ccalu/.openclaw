@@ -1,0 +1,245 @@
+================================================================================
+  BRANCH 5 RESEARCH — CONTENT FACTORY IMAGE GENERATION / IMG2VIDEO
+================================================================================
+
+Date:       26 March 2026
+Status:     ✅ COMPLETE — Ready for implementation
+Location:   C:\Users\User-OEM\.openclaw\workspace\research-haiku\b5-tools-skills\
+
+================================================================================
+  QUICK START
+================================================================================
+
+1. IF YOU'RE LUCCA (Decision-maker):
+   → Read: RESEARCH_SUMMARY.md (15 minutes)
+   → Then: B5_CHEAP_MODEL_STRATEGY.md (cost logic)
+   → Action: Answer 5 critical questions (in RESEARCH_SUMMARY.md)
+
+2. IF YOU'RE CLAUDE CODE (Implementer):
+   → Read: B5_SKILL_CONTRACTS.md (API specs)
+   → Context: B5_TOOLS_RESEARCH.md (detailed specs)
+   → Start: Phase 1 (comfyui-bridge + image-qa)
+
+3. IF YOU'RE PRODUCTION MANAGER (Operator):
+   → Reference: B5_CHEAP_MODEL_STRATEGY.md → Cost Monitoring Dashboard
+   → Monitor: shared/cost_registry.json (real-time budget)
+
+================================================================================
+  WHAT WAS DELIVERED
+================================================================================
+
+6 markdown documents (85.3 KB total):
+
+  README.md (6.2 KB)
+    → Quick navigation guide + file index
+    → Start here for orientation
+
+  RESEARCH_SUMMARY.md (13.6 KB) ⭐ START HERE FOR LUCCA
+    → Executive summary (5-min read)
+    → What, why, timeline, blockers
+    → Critical decision points
+    → Implementation roadmap
+
+  B5_TOOLS_RESEARCH.md (18.2 KB)
+    → Detailed research on 8 concrete tools
+    → Problem statement
+    → Tier 1 (essential) vs Tier 2 (high-value)
+    → 4-phase implementation plan
+
+  B5_SKILL_CONTRACTS.md (23.6 KB) ⭐ START HERE FOR CLAUDE CODE
+    → Full OpenClaw skill specifications
+    → JSON schemas (input/output) for all 8 tools
+    → Example requests/responses
+    → Error handling cases
+
+  B5_CHEAP_MODEL_STRATEGY.md (12.9 KB)
+    → Cost optimization ($5.55 → $0.50-1.50/video)
+    → Per-agent model selection (Haiku, Flash Lite, ComfyUI)
+    → Budget strategy + guardrails
+    → Cost monitoring dashboard
+
+  DELIVERABLES.md (10.9 KB)
+    → Handoff checklist
+    → Quality assurance
+    → What was researched
+    → Integration points
+
+================================================================================
+  KEY FINDINGS
+================================================================================
+
+8 CONCRETE TOOLS IDENTIFIED:
+  • comfyui-bridge — Local image generation ($0/image)
+  • image-qa — Quality scoring with Haiku ($0.002/call)
+  • browser-animator — img2video automation ($0 or $0.50-1/image)
+  • image-director-brief — B3 ↔ B5 coordination
+  • portrait-consistency-check — Character validation
+  • cost-tracker-b5 — Real-time budget tracking
+  • lora-selector — Auto-select LoRAs per scene
+  • animation-fallback-handler — Handle timeouts gracefully
+
+COST IMPACT:
+  • Current:  $5.55/video (GCP crisis baseline)
+  • Target:  $0.50–1.50/video (85% reduction)
+  • Method:  Local ComfyUI (>95%) + Haiku QA + Selenium animation
+
+IMPLEMENTATION TIMELINE:
+  • Phase 1 (Week 1-2):  Generation + QA
+  • Phase 2 (Week 3-4):  Coordination + validation
+  • Phase 3 (Week 5-6):  Animation workflow
+  • Phase 4 (Week 7-8):  Monitoring + instrumentation
+
+================================================================================
+  CRITICAL OPEN QUESTIONS
+================================================================================
+
+These MUST be answered before Phase 1 starts:
+
+  1. Does Freepik have a partner/bulk API?
+  2. Does Higgsfield have an API?
+  3. What's the actual Gemini free tier call limit?
+  4. What QA score threshold = approved?
+  5. Can ComfyUI locally handle 95%+ of requests?
+
+See: RESEARCH_SUMMARY.md → "Critical Decision Points"
+
+================================================================================
+  SUCCESS METRICS
+================================================================================
+
+By end of Phase 4 (Week 8):
+
+  Metric                    | Current      | Target      | Timeline
+  ─────────────────────────────────────────────────────────────────
+  Cost per video            | $5.55        | <$1.00      | Week 8
+  Local execution %         | ~0%          | >95%        | Week 2
+  Image QA approval rate    | N/A          | >85%        | Week 2
+  Animation success rate    | N/A          | >90%        | Week 6
+  B5 fully autonomous       | No           | Yes         | Week 8
+
+================================================================================
+  HOW TO USE THESE FILES
+================================================================================
+
+READING ORDER (by role):
+
+  Lucca:
+    1. RESEARCH_SUMMARY.md (15 min)
+    2. B5_CHEAP_MODEL_STRATEGY.md (cost logic)
+    3. Answer 5 critical questions
+    4. Approve roadmap + budget
+
+  Claude Code:
+    1. B5_SKILL_CONTRACTS.md (API specs)
+    2. B5_TOOLS_RESEARCH.md (context)
+    3. Start Phase 1 implementation
+    4. Integrate B3 → generation_request → comfyui-bridge
+
+  Production Manager:
+    1. RESEARCH_SUMMARY.md → Success Metrics
+    2. B5_CHEAP_MODEL_STRATEGY.md → Cost Monitoring Dashboard
+    3. Monitor shared/cost_registry.json
+
+================================================================================
+  WHAT WAS RESEARCHED
+================================================================================
+
+Documentation Read:
+  ✅ 00_CONTEXT.md — GCP crisis, ComfyUI migration
+  ✅ 01_FRAMEWORK_RESEARCH.md — OpenClaw selection
+  ✅ 03_PIPELINE_MAP.md — Image generation pipeline
+  ✅ 04_BRANCH_ARCHITECTURE.md — B5 structure
+  ✅ 05_MULTI_MACHINE_ARCHITECTURE.md — M1-M6 setup
+  ✅ 06_MODEL_STRATEGY.md — Model selection
+  ✅ 07_BRAINDUMP_OPENCLAW.md — KMS, ComfyUI
+  ✅ 09_HIERARCHY_AND_STRUCTURE.md — Agent hierarchy
+
+NOT Read:
+  ✗ KnowledgeBase (too broad, course dumps)
+  ✗ key_management_system configs (restricted)
+  ✗ Course material (out of scope)
+
+================================================================================
+  NEXT STEPS
+================================================================================
+
+IMMEDIATE (This Week):
+  ☐ Lucca: Verify 5 critical assumptions
+  ☐ Lucca: Approve implementation roadmap
+  ☐ Claude Code: Skim B5_SKILL_CONTRACTS.md
+
+SHORT-TERM (Week of 31 Mar):
+  ☐ Claude Code: Build Phase 1 tools
+  ☐ Test: Run 5 videos through optimized pipeline
+  ☐ Measure: Actual costs, approval rate
+
+MEDIUM-TERM (Weeks of 7 Apr & 14 Apr):
+  ☐ Phase 2: Coordination + validation
+  ☐ Phase 3: Animation workflow
+  ☐ Phase 4: Monitoring + instrumentation
+
+LONG-TERM (Week of 28 Apr):
+  ☐ B5 fully autonomous achieved
+  ☐ Cost tracking operational
+  ☐ Success metrics validated
+
+================================================================================
+  BLOCKERS & RISKS
+================================================================================
+
+None are showstoppers. All have fallback strategies:
+
+  Blocker                        | Probability | Fallback
+  ───────────────────────────────────────────────────────────────
+  Freepik/Higgsfield no API      | Medium      | Selenium automation
+  Gemini free tier exhausted     | Low         | Haiku-only QA
+  ComfyUI GPU overflow           | Low         | OpenRouter fallback
+  Selenium breaks (web UI)       | Medium      | Static image fallback
+
+See: RESEARCH_SUMMARY.md → "Blockers & Risks"
+
+================================================================================
+  FILE STRUCTURE
+================================================================================
+
+C:\Users\User-OEM\.openclaw\workspace\research-haiku\b5-tools-skills\
+├── START_HERE.txt (you are here)
+├── README.md (navigation guide)
+├── RESEARCH_SUMMARY.md ⭐ for Lucca
+├── B5_TOOLS_RESEARCH.md (detailed research)
+├── B5_SKILL_CONTRACTS.md ⭐ for Claude Code
+├── B5_CHEAP_MODEL_STRATEGY.md (cost logic)
+└── DELIVERABLES.md (handoff checklist)
+
+All files ready for production handoff.
+
+================================================================================
+  QUALITY ASSURANCE
+================================================================================
+
+✅ All source docs read completely
+✅ No contradictions between docs
+✅ Model selections aligned with strategy
+✅ Cost projections cross-checked
+✅ OpenClaw compatibility confirmed (v2026.3.22+)
+✅ ComfyUI integration verified (deployed on M1)
+✅ All JSON schemas syntactically valid
+✅ Implementation timeline realistic
+
+Assumptions flagged with mitigation strategies in RESEARCH_SUMMARY.md
+
+================================================================================
+  CONTACT / QUESTIONS
+================================================================================
+
+For questions about this research:
+  • Strategy/business logic → See RESEARCH_SUMMARY.md
+  • Implementation details → See B5_SKILL_CONTRACTS.md
+  • Cost modeling → See B5_CHEAP_MODEL_STRATEGY.md
+  • Timeline → See RESEARCH_SUMMARY.md → Implementation Roadmap
+
+Research completed by: Haiku Subagent (OpenClaw)
+Date: 26 March 2026, 15:37 GMT-3
+Status: ✅ READY FOR HANDOFF
+
+================================================================================

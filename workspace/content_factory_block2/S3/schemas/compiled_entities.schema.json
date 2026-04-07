@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "s3.compiled_entities.v1",
+  "title": "S3 Compiled Entities",
+  "type": "object",
+  "required": [
+    "sector",
+    "contract_version",
+    "job_id",
+    "status",
+    "operators",
+    "compiled_entities",
+    "generated_at"
+  ],
+  "properties": {
+    "sector": { "const": "s3_visual_planning" },
+    "contract_version": { "const": "s3.compiled_entities.v1" },
+    "job_id": { "type": "string" },
+    "video_id": { "type": "string" },
+    "account_id": { "type": "string" },
+    "language": { "type": "string" },
+    "status": { "type": "string", "enum": ["completed", "degraded_completed", "failed"] },
+    "entity_focus": { "type": "object" },
+    "sources": { "type": "object" },
+    "operators": {
+      "type": "object",
+      "required": [
+        "human_subject_extractor",
+        "environment_location_extractor",
+        "object_artifact_extractor",
+        "symbolic_event_extractor"
+      ],
+      "additionalProperties": true
+    },
+    "compiled_entities": {
+      "type": "object",
+      "required": ["human_subjects", "environment_locations", "object_artifacts", "symbolic_events"],
+      "properties": {
+        "human_subjects": { "type": "array" },
+        "environment_locations": { "type": "array" },
+        "object_artifacts": { "type": "array" },
+        "symbolic_events": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
+    "compile_notes": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "generated_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

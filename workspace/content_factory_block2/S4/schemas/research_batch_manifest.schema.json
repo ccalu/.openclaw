@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.research_batch_manifest.v1",
+  "title": "S4 Research Batch Manifest",
+  "description": "Manifest defining how research targets are batched for parallel processing.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "job_id",
+    "parallelism_cap",
+    "batches",
+    "expected_worker_outputs",
+    "v1_second_round_policy"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.research_batch_manifest.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parallelism_cap": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "batches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["batch_id", "target_ids", "priority_order", "notes"],
+        "properties": {
+          "batch_id": { "type": "string", "minLength": 1 },
+          "target_ids": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "priority_order": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Target IDs in priority order for this batch"
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "expected_worker_outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_id", "brief_path", "candidate_set_path"],
+        "properties": {
+          "target_id": { "type": "string", "minLength": 1 },
+          "brief_path": { "type": "string" },
+          "candidate_set_path": { "type": "string" }
+        }
+      }
+    },
+    "v1_second_round_policy": {
+      "type": "string",
+      "const": "disabled"
+    }
+  },
+  "additionalProperties": false
+}

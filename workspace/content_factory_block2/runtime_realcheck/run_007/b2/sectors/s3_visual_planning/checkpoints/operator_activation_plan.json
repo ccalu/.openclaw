@@ -1,0 +1,14 @@
+{
+  "contract_version": "s3.operator_activation_plan.v1",
+  "job_id": "realrun_human_subject_extractor_001",
+  "active_operators": [
+    "human_subject_extractor"
+  ],
+  "inactive_operators": [
+    "environment_location_extractor",
+    "object_artifact_extractor",
+    "symbolic_event_extractor"
+  ],
+  "generated_at": "2026-04-03T16:43:15.660195+00:00",
+  "strategy": "single_operator:human_subject_extractor"
+}

@@ -1,0 +1,12 @@
+{
+  "language": "pt-BR",
+  "total_scenes": 2,
+  "video_context": {
+    "title": "Teste Director",
+    "description": "Run de validação do director."
+  },
+  "scenes": [
+    {"scene_id": "scene_001", "scene_number": 1, "text": "Um rei envelhecido caminha em um salão vazio."},
+    {"scene_id": "scene_002", "scene_number": 2, "text": "Cortesãos discutem o futuro do reino após sua morte."}
+  ]
+}

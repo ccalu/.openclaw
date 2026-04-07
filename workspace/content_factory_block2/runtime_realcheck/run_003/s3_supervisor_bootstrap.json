@@ -1,0 +1,17 @@
+{
+  "kind": "s3_start",
+  "contract_version": "s3.supervisor_bootstrap.v1",
+  "job_id": "realrun_human_subject_extractor_001",
+  "video_id": "realcheck_video_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "run_root": "runtime_realcheck\\run_003",
+  "sector_root": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning",
+  "source_package_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "checkpoints_dir": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\checkpoints",
+  "operators_dir": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\operators",
+  "compiled_dir": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\compiled",
+  "logs_dir": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\logs",
+  "dispatch_dir": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\dispatch",
+  "bootstrap_checkpoint_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\checkpoints\\s3_bootstrap_ready.json"
+}

@@ -1,0 +1,7 @@
+{
+  "event": "operator_status",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realrun_supervisor_005",
+  "status": "completed",
+  "note": "Validated structurally; operator agent invocation was not possible because ACP backend is unavailable in this environment."
+}

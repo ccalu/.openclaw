@@ -1,0 +1,14 @@
+{
+  "video_context": {
+    "title": "Dry Run Video"
+  },
+  "script_overview": {
+    "summary": "Dry run summary"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "summary": "A test scene"
+    }
+  ]
+}

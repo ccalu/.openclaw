@@ -1,0 +1,8 @@
+{
+  "event": "s3_requested",
+  "job_id": "dryrun_job_001",
+  "sector": "s3_visual_planning",
+  "requested_at": "2026-04-03T16:16:11.076652+00:00",
+  "supervisor_agent_id": "sm_s3_visual_planning",
+  "mode": "s3_only"
+}

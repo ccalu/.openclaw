@@ -1,0 +1,13 @@
+{
+  "kind": "b2_start",
+  "contract_version": "b2.bootstrap.v1",
+  "job_id": "real_supervisor_cli_001",
+  "run_root": "runtime_realcheck\\run_cli_probe",
+  "b2_root": "runtime_realcheck\\run_cli_probe\\b2",
+  "account_id": "006",
+  "language": "pt-BR",
+  "inputs": {
+    "screenplay_analysis_path": "runtime_realcheck\\run_cli_probe\\upstream\\screenplay_analysis.json"
+  },
+  "mode": "s3_only"
+}

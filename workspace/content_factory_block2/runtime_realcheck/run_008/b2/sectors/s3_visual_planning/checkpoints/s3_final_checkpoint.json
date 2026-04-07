@@ -1,0 +1,7 @@
+{
+  "status": "degraded_completed",
+  "compiled_entities_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_008\\b2\\sectors\\s3_visual_planning\\compiled\\compiled_entities.json",
+  "sector_report_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_008\\b2\\sectors\\s3_visual_planning\\compiled\\s3_sector_report.md",
+  "captured_at": "2026-04-03T16:51:00.933295+00:00",
+  "primitive": "exec + openclaw agent --agent ... --json"
+}

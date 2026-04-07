@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "s3.symbolic_event.output.v1",
+  "title": "S3 Symbolic Event Output",
+  "type": "object",
+  "required": ["contract_version", "operator_name", "job_id", "status", "entities", "generated_at"],
+  "properties": {
+    "contract_version": { "const": "s3.symbolic_event.output.v1" },
+    "operator_name": { "const": "symbolic_event_extractor" },
+    "job_id": { "type": "string" },
+    "video_id": { "type": "string" },
+    "account_id": { "type": "string" },
+    "language": { "type": "string" },
+    "status": { "type": "string", "enum": ["completed", "failed"] },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "entity_type", "canonical_label", "scene_ids", "visual_relevance_note"],
+        "properties": {
+          "entity_id": { "type": "string" },
+          "entity_type": { "type": "string", "enum": ["symbol", "motif", "event", "phenomenon", "disaster", "abstract_concept", "weather"] },
+          "canonical_label": { "type": "string" },
+          "scene_ids": { "type": "array", "items": { "type": "string" } },
+          "literalness_level": { "type": "string" },
+          "visual_translation_note": { "type": "string" },
+          "visual_relevance_note": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "generated_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,15 @@
+{
+  "contract_version": "s3_source_package.v1",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "inputs": {
+    "screenplay_analysis_path": "runtime_realcheck\\run_002\\upstream\\screenplay_analysis.json"
+  },
+  "generated_at": "2026-04-03T16:16:11.134651+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "s3.object_artifact.output.v1",
+  "title": "S3 Object Artifact Output",
+  "type": "object",
+  "required": ["contract_version", "operator_name", "job_id", "status", "entities", "generated_at"],
+  "properties": {
+    "contract_version": { "const": "s3.object_artifact.output.v1" },
+    "operator_name": { "const": "object_artifact_extractor" },
+    "job_id": { "type": "string" },
+    "video_id": { "type": "string" },
+    "account_id": { "type": "string" },
+    "language": { "type": "string" },
+    "status": { "type": "string", "enum": ["completed", "failed"] },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "entity_type", "canonical_label", "scene_ids", "visual_relevance_note"],
+        "properties": {
+          "entity_id": { "type": "string" },
+          "entity_type": { "type": "string", "enum": ["object", "prop", "artifact", "vehicle", "machine", "animal", "document", "map", "interface", "weapon"] },
+          "canonical_label": { "type": "string" },
+          "scene_ids": { "type": "array", "items": { "type": "string" } },
+          "specificity_level": { "type": "string" },
+          "functional_context": { "type": "string" },
+          "historical_context": { "type": "string" },
+          "visual_relevance_note": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "generated_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

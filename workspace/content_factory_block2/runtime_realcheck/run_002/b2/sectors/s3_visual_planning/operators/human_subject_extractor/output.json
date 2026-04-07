@@ -1,0 +1,21 @@
+{
+  "contract_version": "s3.human_subject.output.v1",
+  "operator_name": "human_subject_extractor",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "h1",
+      "entity_type": "person",
+      "canonical_label": "Luís XIV",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "visual_relevance_note": "main figure"
+    }
+  ],
+  "generated_at": "2026-04-03T16:16:11.140652+00:00"
+}

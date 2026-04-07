@@ -1,0 +1,98 @@
+{
+  "sector": "s3_visual_planning",
+  "contract_version": "s3.compiled_entities.v1",
+  "job_id": "realrun_supervisor_exec_009",
+  "video_id": "realrun_supervisor_exec_009",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "degraded_completed",
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "sources": {
+    "source_package_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json"
+  },
+  "operators": {
+    "human_subject_extractor": {
+      "status": "completed",
+      "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json"
+    },
+    "environment_location_extractor": {
+      "status": "missing",
+      "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\output.json"
+    },
+    "object_artifact_extractor": {
+      "status": "missing",
+      "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\output.json"
+    },
+    "symbolic_event_extractor": {
+      "status": "missing",
+      "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\output.json"
+    }
+  },
+  "compiled_entities": {
+    "human_subjects": [
+      {
+        "entity_id": "hs_001",
+        "entity_type": "person",
+        "canonical_label": "Luís XIV",
+        "aliases": [
+          "o Rei Sol"
+        ],
+        "scene_ids": [
+          "scene_001",
+          "scene_003"
+        ],
+        "specificity_level": "high",
+        "visual_relevance_note": "Central figure walking through Versailles and referenced in the political aftermath."
+      },
+      {
+        "entity_id": "hs_002",
+        "entity_type": "person",
+        "canonical_label": "Madame de Maintenon",
+        "aliases": [],
+        "scene_ids": [
+          "scene_002"
+        ],
+        "specificity_level": "high",
+        "visual_relevance_note": "Named companion of the king during the private ceremony."
+      },
+      {
+        "entity_id": "hs_003",
+        "entity_type": "group",
+        "canonical_label": "courtiers",
+        "aliases": [
+          "membros da corte"
+        ],
+        "scene_ids": [
+          "scene_001",
+          "scene_002"
+        ],
+        "specificity_level": "medium",
+        "visual_relevance_note": "Background observers present in Versailles and at the ceremony."
+      },
+      {
+        "entity_id": "hs_004",
+        "entity_type": "group",
+        "canonical_label": "nobles",
+        "aliases": [],
+        "scene_ids": [
+          "scene_003"
+        ],
+        "specificity_level": "medium",
+        "visual_relevance_note": "Group debating France’s future after the king’s death."
+      }
+    ],
+    "environment_locations": [],
+    "object_artifacts": [],
+    "symbolic_events": []
+  },
+  "compile_notes": [],
+  "warnings": [
+    "missing output for environment_location_extractor",
+    "missing output for object_artifact_extractor",
+    "missing output for symbolic_event_extractor"
+  ],
+  "generated_at": "2026-04-03T17:41:48.439283+00:00"
+}

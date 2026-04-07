@@ -1,0 +1,96 @@
+{
+  "sector": "s3_visual_planning",
+  "contract_version": "s3.compiled_entities.v1",
+  "job_id": "realrun_human_subject_extractor_001",
+  "video_id": "realcheck_video_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "degraded_completed",
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "sources": {
+    "source_package_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json"
+  },
+  "operators": {
+    "human_subject_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json"
+    },
+    "environment_location_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\output.json"
+    },
+    "object_artifact_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\output.json"
+    },
+    "symbolic_event_extractor": {
+      "status": "missing",
+      "output_path": "runtime_realcheck\\run_003\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\output.json"
+    }
+  },
+  "compiled_entities": {
+    "human_subjects": [
+      {
+        "entity_id": "h1",
+        "entity_type": "person",
+        "canonical_label": "Luís XIV",
+        "scene_ids": [
+          "scene_001",
+          "scene_002",
+          "scene_003"
+        ],
+        "visual_relevance_note": "main historical figure"
+      },
+      {
+        "entity_id": "h2",
+        "entity_type": "person",
+        "canonical_label": "Madame de Maintenon",
+        "scene_ids": [
+          "scene_002"
+        ],
+        "visual_relevance_note": "central historical figure"
+      },
+      {
+        "entity_id": "h3",
+        "entity_type": "group",
+        "canonical_label": "cortesãos",
+        "scene_ids": [
+          "scene_001",
+          "scene_002"
+        ],
+        "visual_relevance_note": "background observers"
+      },
+      {
+        "entity_id": "h4",
+        "entity_type": "group",
+        "canonical_label": "membros da corte",
+        "scene_ids": [
+          "scene_002"
+        ],
+        "visual_relevance_note": "background audience"
+      },
+      {
+        "entity_id": "h5",
+        "entity_type": "group",
+        "canonical_label": "nobres",
+        "scene_ids": [
+          "scene_003"
+        ],
+        "visual_relevance_note": "debating group"
+      }
+    ],
+    "environment_locations": [],
+    "object_artifacts": [],
+    "symbolic_events": []
+  },
+  "compile_notes": [],
+  "warnings": [
+    "missing output for environment_location_extractor",
+    "missing output for object_artifact_extractor",
+    "missing output for symbolic_event_extractor"
+  ],
+  "generated_at": "2026-04-03T16:21:35.862208+00:00"
+}

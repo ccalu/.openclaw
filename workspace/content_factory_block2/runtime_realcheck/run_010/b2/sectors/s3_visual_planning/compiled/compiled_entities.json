@@ -1,0 +1,26 @@
+{
+  "sector": "s3_visual_planning",
+  "contract_version": "s3.compiled_entities.v1",
+  "job_id": "director_resume_001",
+  "video_id": "director_resume_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entity_focus": {"priority_mode": "strict_precision", "coverage_mode": "balanced"},
+  "sources": {"source_package_path": "dummy"},
+  "operators": {
+    "human_subject_extractor": {"status": "completed", "output_path": "dummy"},
+    "environment_location_extractor": {"status": "completed", "output_path": "dummy"},
+    "object_artifact_extractor": {"status": "completed", "output_path": "dummy"},
+    "symbolic_event_extractor": {"status": "completed", "output_path": "dummy"}
+  },
+  "compiled_entities": {
+    "human_subjects": [],
+    "environment_locations": [],
+    "object_artifacts": [],
+    "symbolic_events": []
+  },
+  "compile_notes": [],
+  "warnings": [],
+  "generated_at": "2026-04-03T17:00:00Z"
+}

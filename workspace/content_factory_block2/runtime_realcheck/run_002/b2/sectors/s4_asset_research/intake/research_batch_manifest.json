@@ -1,0 +1,25 @@
+{
+  "contract_version": "s4.research_batch_manifest.v1",
+  "job_id": "test_s4_job",
+  "parallelism_cap": 1,
+  "batches": [
+    {
+      "batch_id": "batch_001",
+      "target_ids": [
+        "t001"
+      ],
+      "priority_order": [
+        "t001"
+      ],
+      "notes": "single-target prototype batch"
+    }
+  ],
+  "expected_worker_outputs": [
+    {
+      "target_id": "t001",
+      "brief_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\t001_brief.json",
+      "candidate_set_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s4_asset_research\\targets\\t001\\t001_candidate_set.json"
+    }
+  ],
+  "v1_second_round_policy": "disabled"
+}

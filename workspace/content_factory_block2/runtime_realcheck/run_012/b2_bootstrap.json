@@ -1,0 +1,13 @@
+{
+  "kind": "b2_start",
+  "contract_version": "b2.bootstrap.v1",
+  "job_id": "all_ops_cli_001",
+  "run_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012",
+  "b2_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2",
+  "account_id": "006",
+  "language": "pt-BR",
+  "inputs": {
+    "screenplay_analysis_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\upstream\\screenplay_analysis.json"
+  },
+  "mode": "s3_only"
+}

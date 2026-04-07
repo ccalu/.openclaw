@@ -1,0 +1,21 @@
+{
+  "contract_version": "s3.human_subject.output.v1",
+  "operator_name": "human_subject_extractor",
+  "job_id": "real_supervisor_cli_001",
+  "video_id": "real_supervisor_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "h1",
+      "entity_type": "person",
+      "canonical_label": "king",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "visual_relevance_note": "main figure"
+    }
+  ],
+  "generated_at": "2026-04-03T17:46:45.000000+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "checkEveryMinutes": 5,
+  "notifyEveryMinutes": 10,
+  "stallMinutes": 30,
+  "orphanMinutes": 60,
+  "timezone": "America/Sao_Paulo",
+  "enabled": true,
+  "version": 2
+}

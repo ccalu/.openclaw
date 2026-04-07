@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "S4 Asset Materialization Report",
+  "description": "Per-target materialization status for best candidates. Separate layer from raw candidate_set and evaluated_candidate_set.",
+  "type": "object",
+  "required": ["contract_version", "target_id", "job_id", "materialized_at", "entries", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.asset_materialization_report.v1"
+    },
+    "target_id": { "type": "string", "minLength": 1 },
+    "job_id": { "type": "string", "minLength": 1 },
+    "materialized_at": { "type": "string", "minLength": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "materialization_status", "acquisition_mode"],
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "materialization_status": {
+            "type": "string",
+            "enum": ["downloaded", "page_record", "skipped", "failed"]
+          },
+          "acquisition_mode": {
+            "type": "string",
+            "enum": ["direct_download", "metadata_extract", "reference_only", "best_effort"]
+          },
+          "local_asset_path": { "type": ["string", "null"] },
+          "capture_path": { "type": ["string", "null"] },
+          "failure_reason": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total_best_candidates", "downloaded", "page_records", "skipped"],
+      "additionalProperties": false,
+      "properties": {
+        "total_best_candidates": { "type": "integer", "minimum": 0 },
+        "downloaded": { "type": "integer", "minimum": 0 },
+        "page_records": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

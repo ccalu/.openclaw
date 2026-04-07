@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.target_research_brief.v1",
+  "title": "S4 Target Research Brief",
+  "description": "Research brief for a single target entity.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "job_id",
+    "batch_id",
+    "target_id",
+    "canonical_label",
+    "target_type",
+    "scene_ids",
+    "research_modes",
+    "priority",
+    "search_goals",
+    "research_needs",
+    "source_entity_ids",
+    "storage_paths",
+    "output_contract",
+    "notes",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.target_research_brief.v1"
+    },
+    "job_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_type": {
+      "type": "string",
+      "enum": [
+        "person_historical",
+        "location_historical",
+        "object_artifact",
+        "architectural_anchor",
+        "interior_space",
+        "symbolic_sequence",
+        "event_reference",
+        "environment_reference"
+      ]
+    },
+    "scene_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "research_modes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "factual_evidence",
+          "visual_reference",
+          "stylistic_inspiration",
+          "contextual_reference"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical", "high", "medium", "low"]
+    },
+    "search_goals": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "research_needs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_entity_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "storage_paths": {
+      "type": "object",
+      "required": ["target_root", "candidate_set_path", "assets_dir", "previews_dir", "captures_dir"],
+      "properties": {
+        "target_root": { "type": "string" },
+        "candidate_set_path": { "type": "string" },
+        "assets_dir": { "type": "string" },
+        "previews_dir": { "type": "string" },
+        "captures_dir": { "type": "string" }
+      }
+    },
+    "output_contract": {
+      "type": "string",
+      "const": "s4.candidate_set.v1"
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

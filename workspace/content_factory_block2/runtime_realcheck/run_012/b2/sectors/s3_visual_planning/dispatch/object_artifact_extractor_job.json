@@ -1,0 +1,76 @@
+{
+  "contract_version": "s3.operator_dispatch.v1",
+  "workflow_run_id": "all_ops_cli_001",
+  "sector_run_id": "all_ops_cli_001_s3",
+  "supervisor_run_id": "all_ops_cli_001_s3_supervisor",
+  "operator_run_id": "all_ops_cli_001_object_artifact_extractor_1",
+  "operator_name": "object_artifact_extractor",
+  "job_id": "all_ops_cli_001",
+  "video_id": "all_ops_cli_001",
+  "account_id": "006",
+  "channel_id": "006",
+  "project_id": "content_factory_block2",
+  "language": "pt-BR",
+  "entity_focus": {
+    "families": [
+      "objects",
+      "props",
+      "artifacts",
+      "vehicles",
+      "machines",
+      "animals",
+      "documents",
+      "maps",
+      "interfaces"
+    ],
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "source_package": {
+    "path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+    "format": "s3_source_package.v1"
+  },
+  "analysis_scope": {
+    "scene_ids": [],
+    "full_video": true
+  },
+  "account_rules": {
+    "precision_profile": "strict_specificity",
+    "priority_entities": [],
+    "salience_threshold": "high",
+    "notes": "v1 narrow run"
+  },
+  "output": {
+    "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\output.json",
+    "expected_schema": "s3.object_artifact.output.v1",
+    "write_mode": "replace"
+  },
+  "runtime": {
+    "checkpoint_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\checkpoint.json",
+    "status_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\status.json",
+    "log_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\log.md"
+  },
+  "execution_policy": {
+    "max_attempt": 1,
+    "timeout_seconds": 900,
+    "failure_mode": "explicit",
+    "partial_output_allowed": false
+  },
+  "operator_payload": {
+    "target_families": [
+      "objects",
+      "props",
+      "artifacts",
+      "vehicles",
+      "machines",
+      "animals",
+      "documents",
+      "maps",
+      "interfaces"
+    ],
+    "historical_specificity_bias": "account_driven",
+    "include_functional_objects": true,
+    "merge_duplicate_mentions": true,
+    "specificity_bias": "account_driven"
+  }
+}

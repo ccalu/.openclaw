@@ -1,0 +1,7 @@
+{
+  "event": "s3_bootstrap_ready",
+  "job_id": "realrun_human_subject_extractor_001",
+  "sector": "s3_visual_planning",
+  "created_at": "2026-04-03T16:43:15.583194+00:00",
+  "source_package_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_007\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json"
+}

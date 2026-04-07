@@ -1,0 +1,56 @@
+{
+  "contract_version": "s3.operator_dispatch.v1",
+  "workflow_run_id": "realcheck_wf_001",
+  "sector_run_id": "realcheck_s3_001",
+  "supervisor_run_id": "realcheck_sup_001",
+  "operator_run_id": "realcheck_human_001",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realcheck_job_001",
+  "video_id": "realcheck_video_001",
+  "account_id": "006",
+  "channel_id": "006",
+  "project_id": "content_factory_block2",
+  "language": "pt-BR",
+  "entity_focus": {
+    "families": ["characters", "human_figures", "groups"],
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "source_package": {
+    "path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/human_source_package.json",
+    "format": "s3_source_package.v1"
+  },
+  "analysis_scope": {
+    "scene_ids": ["scene_001", "scene_002", "scene_003"],
+    "full_video": true
+  },
+  "account_rules": {
+    "precision_profile": "strict_specificity",
+    "priority_entities": ["historical_figures"],
+    "salience_threshold": "high",
+    "notes": "real operator narrow validation"
+  },
+  "output": {
+    "output_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/operators/human_subject_extractor/output.json",
+    "expected_schema": "s3.human_subject.output.v1",
+    "write_mode": "replace"
+  },
+  "runtime": {
+    "checkpoint_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/operators/human_subject_extractor/checkpoint.json",
+    "status_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/operators/human_subject_extractor/status.json",
+    "log_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/operators/human_subject_extractor/log.md"
+  },
+  "execution_policy": {
+    "max_attempt": 1,
+    "timeout_seconds": 900,
+    "failure_mode": "explicit",
+    "partial_output_allowed": false
+  },
+  "operator_payload": {
+    "target_families": ["characters", "human_figures", "groups"],
+    "identity_resolution": "high",
+    "include_aliases": true,
+    "group_detection": true,
+    "specificity_bias": "account_driven"
+  }
+}

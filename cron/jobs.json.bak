@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "0bb637bb-765d-4c8a-b721-260619faf16f",
+      "name": "Tobias Task Watchdog",
+      "enabled": false,
+      "createdAtMs": 1774634505568,
+      "updatedAtMs": 1774876309828,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/5 * * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the Tobias task watchdog. Read C:\\Users\\User-OEM\\.openclaw\\workspace\\task_watchdog\\README.md for context. Execute python C:\\Users\\User-OEM\\.openclaw\\workspace\\task_watchdog\\watchdog.py, inspect its JSON output, and follow this rule strictly: if notifications is empty, reply with exactly NO_REPLY and nothing else. If there are notifications, rewrite each one in clean human Portuguese, concise but informative, and deliver them. Do not send silent confirmations. Do not explain empty scans. Do not invent status.",
+        "model": "anthropic/claude-haiku-4-5",
+        "lightContext": true
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:1962323981"
+      },
+      "state": {
+        "lastRunAtMs": 1774876200020,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 29234,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "22d839a8-01fe-4474-a837-7e1420e6b69d",
+      "name": "Tobias Launch Audit",
+      "enabled": false,
+      "createdAtMs": 1774724668334,
+      "updatedAtMs": 1774876313752,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/5 * * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the Tobias launch audit. Execute python C:\\Users\\User-OEM\\.openclaw\\workspace\\task_watchdog\\watchdog_launch_audit.py. If it auto-registers any previously untracked subagent launches, send a concise alert in Portuguese saying that untracked launches were detected and registered automatically. If added is 0, reply with exactly NO_REPLY.",
+        "model": "anthropic/claude-haiku-4-5",
+        "lightContext": true
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "telegram:1962323981"
+      },
+      "state": {
+        "lastRunAtMs": 1774876229254,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 20043,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "bf42c38d-0b5b-44b3-9fe4-a23f7c6eef3d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "PM-VO-S1 progress updates every 5 min",
+      "enabled": false,
+      "createdAtMs": 1775053394171,
+      "updatedAtMs": 1775122627843,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1775053394171
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: this is a 5-minute progress update reminder for the current PM -> VO -> S1 controlled test. Check the current run state, identify the exact step reached (PM, VO bootstrap, VO script_ready, or S1/b1_*), summarize progress briefly, and tell Lucca what has completed, what is currently running or blocked, and the next expected checkpoint."
+      },
+      "state": {
+        "lastRunAtMs": 1775122435482,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 92936,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "3ee6e17f-87b0-4e46-8b2c-c4baff05ce72",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "s1-overnight-supervision",
+      "enabled": false,
+      "createdAtMs": 1775091736375,
+      "updatedAtMs": 1775122627853,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 900000,
+        "anchorMs": 1775091736375
+      },
+      "sessionTarget": "session:agent:main:main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Continue overnight supervision of S1 robustness work. Read the current workspace context and recent memory. Prioritize either making S1 robust enough to progress materially toward b1_complete or producing a strong technical verdict on whether the current OpenClaw path for S1 should be kept, redesigned, or aborted. Check current run state, inspect latest failures, continue the highest-leverage fix, update TASKS.md / memory/2026-04-01.md if important conclusions emerge, and send a concise progress summary to the current session.",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1775122364770,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 68671,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 12,
+        "lastError": "Delivering to Telegram requires target <chatId>"
+      }
+    },
+    {
+      "id": "43438b79-d05a-4fa5-be1c-b395ab932702",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "content-factory-b2-execution",
+      "enabled": false,
+      "createdAtMs": 1775227706159,
+      "updatedAtMs": 1775230530405,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1200000,
+        "anchorMs": 1775227706159
+      },
+      "sessionTarget": "session:content-factory-b2-execution",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Continuar a execução do programa em `C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\EXECUTION_PLAN.md` e `C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\EXECUTION_STATE.md`. Antes de agir, ler os docs centrais relevantes em `C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\` e o estado actual do workspace. Focar exclusivamente em deixar o lado OpenClaw do Bloco 2 pronto até ao ponto em que só falte criar o Perseus no Paperclip. Executar apenas o próximo bloco concreto de trabalho, persistir tudo no disco, actualizar `EXECUTION_STATE.md`, não expandir para S4/S5/S6 antes de S3 estar pronto para o primeiro teste, e usar GPT-5.4 mini via OpenAI OAuth nos agents desta fase. Quando atingir a milestone \"agora só falta criar o Perseus no Paperclip\", anunciar isso claramente ao Lucca e parar novas acções autónomas deste programa.",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1775230106186,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 86422,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2
+      }
+    }
+  ]
+}

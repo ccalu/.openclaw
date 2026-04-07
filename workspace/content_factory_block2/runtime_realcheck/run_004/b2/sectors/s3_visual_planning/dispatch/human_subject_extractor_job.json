@@ -1,0 +1,68 @@
+{
+  "contract_version": "s3.operator_dispatch.v1",
+  "workflow_run_id": "realrun_human_subject_extractor_001",
+  "sector_run_id": "realrun_human_subject_extractor_001_s3",
+  "supervisor_run_id": "realrun_human_subject_extractor_001_s3_supervisor",
+  "operator_run_id": "realrun_human_subject_extractor_001_human_subject_extractor_1",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realrun_human_subject_extractor_001",
+  "video_id": "realcheck_video_001",
+  "account_id": "006",
+  "channel_id": "006",
+  "project_id": "content_factory_block2",
+  "language": "pt-BR",
+  "entity_focus": {
+    "families": [
+      "characters",
+      "human_figures",
+      "groups",
+      "factions",
+      "crowds"
+    ],
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "source_package": {
+    "path": "runtime_realcheck\\run_004\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+    "format": "s3_source_package.v1"
+  },
+  "analysis_scope": {
+    "scene_ids": [],
+    "full_video": true
+  },
+  "account_rules": {
+    "precision_profile": "strict_specificity",
+    "priority_entities": [],
+    "salience_threshold": "high",
+    "notes": "v1 narrow run"
+  },
+  "output": {
+    "output_path": "runtime_realcheck\\run_004\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json",
+    "expected_schema": "s3.human_subject.output.v1",
+    "write_mode": "replace"
+  },
+  "runtime": {
+    "checkpoint_path": "runtime_realcheck\\run_004\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\checkpoint.json",
+    "status_path": "runtime_realcheck\\run_004\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\status.json",
+    "log_path": "runtime_realcheck\\run_004\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\log.md"
+  },
+  "execution_policy": {
+    "max_attempt": 1,
+    "timeout_seconds": 900,
+    "failure_mode": "explicit",
+    "partial_output_allowed": false
+  },
+  "operator_payload": {
+    "target_families": [
+      "characters",
+      "human_figures",
+      "groups",
+      "factions",
+      "crowds"
+    ],
+    "identity_resolution": "high",
+    "include_aliases": true,
+    "group_detection": true,
+    "specificity_bias": "account_driven"
+  }
+}

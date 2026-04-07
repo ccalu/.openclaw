@@ -1,0 +1,83 @@
+{
+  "sector": "s3_visual_planning",
+  "contract_version": "s3.compiled_entities.v1",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "sources": {
+    "source_package_path": "runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json"
+  },
+  "operators": {
+    "human_subject_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\operators\\human_subject_extractor\\output.json"
+    },
+    "environment_location_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\output.json"
+    },
+    "object_artifact_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\operators\\object_artifact_extractor\\output.json"
+    },
+    "symbolic_event_extractor": {
+      "status": "completed",
+      "output_path": "runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\output.json"
+    }
+  },
+  "compiled_entities": {
+    "human_subjects": [
+      {
+        "entity_id": "h1",
+        "entity_type": "person",
+        "canonical_label": "Luís XIV",
+        "scene_ids": [
+          "scene_001"
+        ],
+        "visual_relevance_note": "main figure"
+      }
+    ],
+    "environment_locations": [
+      {
+        "entity_id": "e1",
+        "entity_type": "specific_place",
+        "canonical_label": "Palácio",
+        "scene_ids": [
+          "scene_001"
+        ],
+        "visual_relevance_note": "main location"
+      }
+    ],
+    "object_artifacts": [
+      {
+        "entity_id": "o1",
+        "entity_type": "artifact",
+        "canonical_label": "Coroa",
+        "scene_ids": [
+          "scene_001"
+        ],
+        "visual_relevance_note": "symbol of power"
+      }
+    ],
+    "symbolic_events": [
+      {
+        "entity_id": "s1",
+        "entity_type": "symbol",
+        "canonical_label": "Decadência",
+        "scene_ids": [
+          "scene_001"
+        ],
+        "visual_relevance_note": "atmospheric motif"
+      }
+    ]
+  },
+  "compile_notes": [],
+  "warnings": [],
+  "generated_at": "2026-04-03T16:16:11.447651+00:00"
+}

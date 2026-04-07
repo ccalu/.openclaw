@@ -1,0 +1,25 @@
+{
+  "video_context": {
+    "title": "Supervisor Exec Run 009"
+  },
+  "script_overview": {
+    "summary": "Fresh activation proof for exec + openclaw agent"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "title": "Opening",
+      "summary": "Luís XIV walks through Versailles as courtiers watch."
+    },
+    {
+      "scene_id": "scene_002",
+      "title": "Ceremony",
+      "summary": "Madame de Maintenon accompanies the king in a private ceremony."
+    },
+    {
+      "scene_id": "scene_003",
+      "title": "Aftermath",
+      "summary": "Nobles debate the future of France after the king dies."
+    }
+  ]
+}

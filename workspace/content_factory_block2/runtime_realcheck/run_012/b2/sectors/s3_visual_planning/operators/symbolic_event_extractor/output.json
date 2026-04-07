@@ -1,0 +1,112 @@
+{
+  "contract_version": "s3.symbolic_event.output.v2",
+  "operator_name": "symbolic_event_extractor",
+  "job_id": "all_ops_cli_001",
+  "video_id": "all_ops_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "source_package_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "derived_from_video_base": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "entity_focus": {
+    "families": [
+      "symbols",
+      "events",
+      "phenomena",
+      "atmospheric_elements"
+    ],
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "entities": [
+    {
+      "entity_id": "sym_001",
+      "entity_type": "symbolic_action",
+      "canonical_label": "royal entrance",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "confidence": 0.96,
+      "visual_relevance_note": "authority and legitimacy entering a formal royal space",
+      "evidence": [
+        "A king enters the palace wearing a crown."
+      ],
+      "symbolic_elements": [
+        "king",
+        "crown",
+        "palace"
+      ]
+    },
+    {
+      "entity_id": "sym_002",
+      "entity_type": "atmospheric_phenomenon",
+      "canonical_label": "storm over the city",
+      "scene_ids": [
+        "scene_002"
+      ],
+      "confidence": 0.97,
+      "visual_relevance_note": "dramatic tension over a public urban setting",
+      "evidence": [
+        "Thunder over the city as banners wave."
+      ],
+      "symbolic_elements": [
+        "thunder",
+        "city",
+        "banners"
+      ]
+    }
+  ],
+  "symbolic_events": [
+    {
+      "event_id": "sym_001",
+      "name": "royal entrance",
+      "type": "symbolic_action",
+      "confidence": 0.96,
+      "evidence": [
+        "A king enters the palace wearing a crown."
+      ],
+      "scene_refs": [
+        "scene_001"
+      ],
+      "symbolic_elements": [
+        "king",
+        "crown",
+        "palace"
+      ],
+      "interpretation": "authority and legitimacy entering a formal royal space"
+    },
+    {
+      "event_id": "sym_002",
+      "name": "storm over the city",
+      "type": "atmospheric_phenomenon",
+      "confidence": 0.97,
+      "evidence": [
+        "Thunder over the city as banners wave."
+      ],
+      "scene_refs": [
+        "scene_002"
+      ],
+      "symbolic_elements": [
+        "thunder",
+        "city",
+        "banners"
+      ],
+      "interpretation": "dramatic tension over a public urban setting"
+    }
+  ],
+  "scene_coverage": [
+    {
+      "scene_id": "scene_001",
+      "symbolic_event_refs": [
+        "sym_001"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "symbolic_event_refs": [
+        "sym_002"
+      ]
+    }
+  ],
+  "generated_at": "2026-04-03T17:14:00.000000+00:00",
+  "status": "completed"
+}

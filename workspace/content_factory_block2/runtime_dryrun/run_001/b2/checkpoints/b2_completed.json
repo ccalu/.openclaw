@@ -1,0 +1,8 @@
+{
+  "event": "b2_completed",
+  "job_id": "dryrun_job_001",
+  "mode": "s3_only",
+  "completed_at": "2026-04-03T16:07:35.855255+00:00",
+  "compiled_entities_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_dryrun\\run_001\\b2\\sectors\\s3_visual_planning\\compiled\\compiled_entities.json",
+  "sector_report_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_dryrun\\run_001\\b2\\sectors\\s3_visual_planning\\compiled\\s3_sector_report.md"
+}

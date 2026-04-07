@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.candidate_set.v1",
+  "title": "S4 Candidate Set",
+  "description": "Raw candidate assets found for a target.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "target_id",
+    "canonical_label",
+    "target_type",
+    "scene_ids",
+    "candidates",
+    "worker_notes",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.candidate_set.v1"
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_type": {
+      "type": "string",
+      "enum": [
+        "person_historical",
+        "location_historical",
+        "object_artifact",
+        "architectural_anchor",
+        "interior_space",
+        "symbolic_sequence",
+        "event_reference",
+        "environment_reference"
+      ]
+    },
+    "scene_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "source_url",
+          "page_title",
+          "source_domain",
+          "preliminary_classification",
+          "rationale",
+          "confidence",
+          "licensing_note",
+          "acquisition_mode",
+          "local_asset_path",
+          "preview_path",
+          "capture_path",
+          "timestamp"
+        ],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "source_url": { "type": "string" },
+          "page_title": { "type": "string" },
+          "source_domain": { "type": "string" },
+          "preliminary_classification": {
+            "type": "string",
+            "enum": [
+              "factual_evidence",
+              "visual_reference",
+              "stylistic_inspiration",
+              "reject"
+            ]
+          },
+          "rationale": { "type": "string" },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "licensing_note": { "type": "string" },
+          "acquisition_mode": {
+            "type": "string",
+            "enum": ["reference_only", "preview_asset", "materialized_asset"]
+          },
+          "local_asset_path": { "type": ["string", "null"] },
+          "preview_path": { "type": ["string", "null"] },
+          "capture_path": { "type": ["string", "null"] },
+          "timestamp": { "type": "string" }
+        }
+      }
+    },
+    "worker_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

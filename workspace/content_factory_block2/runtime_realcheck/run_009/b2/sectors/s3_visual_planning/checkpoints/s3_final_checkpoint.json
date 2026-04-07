@@ -1,0 +1,14 @@
+{
+  "event": "s3_final_checkpoint",
+  "contract_version": "s3.supervisor_bootstrap.v1",
+  "job_id": "realrun_supervisor_exec_009",
+  "video_id": "realrun_supervisor_exec_009",
+  "sector": "s3_visual_planning",
+  "status": "degraded_completed",
+  "completed_operators": ["human_subject_extractor"],
+  "degraded_reasons": [
+    "ACP runtime backend unavailable; the real op_s3_human_subject_extractor agent could not be launched.",
+    "Only one operator path was executed, so the full S3 operator set was not run."
+  ],
+  "generated_at": "2026-04-03T17:42:20+00:00"
+}

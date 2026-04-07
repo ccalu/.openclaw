@@ -1,0 +1,21 @@
+{
+  "contract_version": "s3.object_artifact.output.v1",
+  "operator_name": "object_artifact_extractor",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "o1",
+      "entity_type": "artifact",
+      "canonical_label": "Coroa",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "visual_relevance_note": "symbol of power"
+    }
+  ],
+  "generated_at": "2026-04-03T16:07:35.521252+00:00"
+}

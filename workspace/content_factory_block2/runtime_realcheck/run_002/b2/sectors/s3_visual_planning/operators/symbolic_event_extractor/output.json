@@ -1,0 +1,21 @@
+{
+  "contract_version": "s3.symbolic_event.output.v1",
+  "operator_name": "symbolic_event_extractor",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "s1",
+      "entity_type": "symbol",
+      "canonical_label": "Decadência",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "visual_relevance_note": "atmospheric motif"
+    }
+  ],
+  "generated_at": "2026-04-03T16:16:11.327652+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "contract_version": "s3_source_package.v1",
+  "job_id": "all_ops_cli_001",
+  "video_id": "all_ops_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "video_context": {
+    "video_name": "all_ops_cli_001",
+    "title": "All Operators Real Validation",
+    "description": "",
+    "account_id": "006",
+    "language": "pt-BR"
+  },
+  "script_overview": {
+    "full_word_count": null,
+    "total_scenes": 2,
+    "source_row": null
+  },
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "inputs": {
+    "screenplay_analysis_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\upstream\\screenplay_analysis.json"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "A king enters the palace wearing a crown."
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "Thunder over the city as banners wave."
+    }
+  ],
+  "generated_at": "2026-04-03T17:09:46.782060+00:00"
+}

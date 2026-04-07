@@ -1,0 +1,52 @@
+{
+  "contract_version": "s4.research_intake.v1",
+  "sector": "s4_asset_research",
+  "metadata": {
+    "job_id": "test_s4_job",
+    "video_id": "test_video",
+    "account_id": "006",
+    "language": "pt",
+    "generated_at": "2026-04-04T22:07:57.349912+00:00",
+    "generated_from": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\compiled\\compiled_entities.json"
+  },
+  "source_refs": {
+    "compiled_entities_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_002\\b2\\sectors\\s3_visual_planning\\compiled\\compiled_entities.json"
+  },
+  "research_targets": [
+    {
+      "target_id": "t001",
+      "canonical_label": "Coroa",
+      "target_type": "object_artifact",
+      "source_entity_ids": [
+        "o1"
+      ],
+      "scene_ids": [
+        "scene_001"
+      ],
+      "research_modes": [
+        "visual_reference",
+        "factual_evidence"
+      ],
+      "priority": "medium",
+      "research_needs": [
+        "Reference images of Coroa",
+        "Historical context and visual details of Coroa"
+      ],
+      "notes": "symbol of power"
+    }
+  ],
+  "scene_index": [
+    {
+      "scene_id": "scene_001",
+      "linked_target_ids": [
+        "t001"
+      ],
+      "notes": ""
+    }
+  ],
+  "intake_notes": [
+    "Prototype: filtered to entity_id=o1",
+    "Total targets: 1"
+  ],
+  "warnings": []
+}

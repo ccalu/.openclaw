@@ -1,0 +1,21 @@
+{
+  "contract_version": "s3.environment_location.output.v1",
+  "operator_name": "environment_location_extractor",
+  "job_id": "dryrun_job_001",
+  "video_id": "dryrun_job_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "e1",
+      "entity_type": "specific_place",
+      "canonical_label": "Palácio",
+      "scene_ids": [
+        "scene_001"
+      ],
+      "visual_relevance_note": "main location"
+    }
+  ],
+  "generated_at": "2026-04-03T16:16:11.202652+00:00"
+}

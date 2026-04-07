@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.2",
+    "lastTouchedAt": "2026-04-05T23:01:54.674Z"
+  },
+  "env": {
+    "GROQ_API_KEY": "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"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-26T00:36:44.366Z",
+    "lastRunVersion": "2026.3.24",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      },
+      "openai-codex:lucca2703@gmail.com": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      },
+      "openai:default": {
+        "provider": "openai",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-codex/gpt-5.4"
+      },
+      "models": {
+        "openai-codex/gpt-5.4": {},
+        "openai-codex/gpt-5.4-mini": {},
+        "claude-cli/claude-sonnet-4-6": {
+          "alias": "sonnet"
+        },
+        "claude-cli/claude-haiku-4-5": {},
+        "claude-cli/claude-opus-4-6": {}
+      },
+      "workspace": "C:\\Users\\User-OEM\\.openclaw\\workspace"
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "sm_s1_pre_production",
+        "name": "sm_s1_pre_production",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s1_pre_production",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s1_pre_production\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s1_scene_director",
+        "name": "op_s1_scene_director",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_scene_director",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_scene_director\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s1_tts_polish",
+        "name": "op_s1_tts_polish",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_tts_polish",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_tts_polish\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s1_tts_polish_semantic_reviewer",
+        "name": "op_s1_tts_polish_semantic_reviewer",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_tts_polish_semantic_reviewer",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s1_tts_polish_semantic_reviewer\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "sm_pm_production_manager",
+        "name": "sm_pm_production_manager",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_pm_production_manager",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_pm_production_manager\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "sm_vo_video_orchestrator",
+        "name": "sm_vo_video_orchestrator",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_vo_video_orchestrator",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_vo_video_orchestrator\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "sm_s3_visual_planning",
+        "name": "sm_s3_visual_planning",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s3_visual_planning",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s3_visual_planning\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s3_human_subject_extractor",
+        "name": "op_s3_human_subject_extractor",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_human_subject_extractor",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_human_subject_extractor\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s3_environment_location_extractor",
+        "name": "op_s3_environment_location_extractor",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_environment_location_extractor",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_environment_location_extractor\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s3_object_artifact_extractor",
+        "name": "op_s3_object_artifact_extractor",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_object_artifact_extractor",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_object_artifact_extractor\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s3_symbolic_event_extractor",
+        "name": "op_s3_symbolic_event_extractor",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_symbolic_event_extractor",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s3_symbolic_event_extractor\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "b2_director",
+        "name": "b2_director",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\b2_director",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\b2_director\\agent"
+      },
+      {
+        "id": "sm_s4_asset_research",
+        "name": "sm_s4_asset_research",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s4_asset_research",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\sm_s4_asset_research\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_target_builder",
+        "name": "op_s4_target_builder",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_target_builder",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_target_builder\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_web_investigator",
+        "name": "op_s4_web_investigator",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_web_investigator",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_web_investigator\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_target_research_worker",
+        "name": "op_s4_target_research_worker",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_target_research_worker",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_target_research_worker\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_candidate_evaluator",
+        "name": "op_s4_candidate_evaluator",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_candidate_evaluator",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_candidate_evaluator\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_coverage_analyst",
+        "name": "op_s4_coverage_analyst",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_coverage_analyst",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_coverage_analyst\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      },
+      {
+        "id": "op_s4_pack_compiler",
+        "name": "op_s4_pack_compiler",
+        "workspace": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_pack_compiler",
+        "agentDir": "C:\\Users\\User-OEM\\.openclaw\\agents\\op_s4_pack_compiler\\agent",
+        "model": "openai-codex/gpt-5.4-mini"
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave"
+      }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "models": [
+          {
+            "provider": "groq",
+            "model": "whisper-large-v3-turbo"
+          }
+        ]
+      }
+    },
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    },
+    "fs": {
+      "workspaceOnly": false
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8733780416:AAEZ_6ktfDKSL0VnUayUw1KSHgB6VaQoV4A",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "f523030955237327eee6b248e83bcd2e44b20c36601f90d2"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": []
+    },
+    "tools": {
+      "allow": [
+        "cron",
+        "gateway",
+        "sessions_spawn"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "brave": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "BSA8PiL4XJdLTpvD3RxfAfCEcwG3-hw"
+          }
+        }
+      }
+    }
+  }
+}

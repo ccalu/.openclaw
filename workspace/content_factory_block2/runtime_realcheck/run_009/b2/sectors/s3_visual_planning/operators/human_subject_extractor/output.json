@@ -1,0 +1,51 @@
+{
+  "contract_version": "s3.human_subject.output.v1",
+  "operator_name": "human_subject_extractor",
+  "job_id": "realrun_supervisor_exec_009",
+  "video_id": "realrun_supervisor_exec_009",
+  "account_id": "006",
+  "language": "pt-BR",
+  "status": "completed",
+  "entities": [
+    {
+      "entity_id": "hs_001",
+      "entity_type": "person",
+      "canonical_label": "Luís XIV",
+      "aliases": ["o Rei Sol"],
+      "scene_ids": ["scene_001", "scene_003"],
+      "specificity_level": "high",
+      "visual_relevance_note": "Central figure walking through Versailles and referenced in the political aftermath."
+    },
+    {
+      "entity_id": "hs_002",
+      "entity_type": "person",
+      "canonical_label": "Madame de Maintenon",
+      "aliases": [],
+      "scene_ids": ["scene_002"],
+      "specificity_level": "high",
+      "visual_relevance_note": "Named companion of the king during the private ceremony."
+    },
+    {
+      "entity_id": "hs_003",
+      "entity_type": "group",
+      "canonical_label": "courtiers",
+      "aliases": ["membros da corte"],
+      "scene_ids": ["scene_001", "scene_002"],
+      "specificity_level": "medium",
+      "visual_relevance_note": "Background observers present in Versailles and at the ceremony."
+    },
+    {
+      "entity_id": "hs_004",
+      "entity_type": "group",
+      "canonical_label": "nobles",
+      "aliases": [],
+      "scene_ids": ["scene_003"],
+      "specificity_level": "medium",
+      "visual_relevance_note": "Group debating France’s future after the king’s death."
+    }
+  ],
+  "warnings": [
+    "ACP runtime backend unavailable; real op_s3_human_subject_extractor agent could not be launched in this environment."
+  ],
+  "generated_at": "2026-04-03T17:41:50+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "job_id": "all_ops_cli_001",
+  "operator_run_id": "all_ops_cli_001_environment_location_extractor_1",
+  "status": "completed",
+  "schema": "s3.environment_location.output.v1.canonical",
+  "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\output.json",
+  "checkpoint_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\environment_location_extractor\\checkpoint.json",
+  "updated_at": "2026-04-03T17:33:00.000000+00:00"
+}

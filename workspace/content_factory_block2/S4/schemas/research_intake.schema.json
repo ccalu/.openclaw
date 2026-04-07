@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.research_intake.v1",
+  "title": "S4 Research Intake",
+  "description": "Input manifest defining what entities need asset research.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "sector",
+    "metadata",
+    "source_refs",
+    "research_targets",
+    "scene_index",
+    "intake_notes",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.research_intake.v1"
+    },
+    "sector": {
+      "type": "string",
+      "const": "s4_asset_research"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["job_id", "video_id", "account_id", "language", "generated_at", "generated_from"],
+      "properties": {
+        "job_id": { "type": "string", "minLength": 1 },
+        "video_id": { "type": "string", "minLength": 1 },
+        "account_id": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "minLength": 2, "maxLength": 5 },
+        "generated_at": { "type": "string" },
+        "generated_from": { "type": "string" }
+      }
+    },
+    "source_refs": {
+      "type": "object",
+      "required": ["compiled_entities_path"],
+      "properties": {
+        "compiled_entities_path": { "type": "string" }
+      }
+    },
+    "research_targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "target_id",
+          "canonical_label",
+          "target_type",
+          "source_entity_ids",
+          "scene_ids",
+          "research_modes",
+          "priority",
+          "research_needs",
+          "notes"
+        ],
+        "properties": {
+          "target_id": { "type": "string", "minLength": 1 },
+          "canonical_label": { "type": "string", "minLength": 1 },
+          "target_type": {
+            "type": "string",
+            "enum": [
+              "person_historical",
+              "location_historical",
+              "object_artifact",
+              "architectural_anchor",
+              "interior_space",
+              "symbolic_sequence",
+              "event_reference",
+              "environment_reference"
+            ]
+          },
+          "source_entity_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "scene_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "research_modes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "factual_evidence",
+                "visual_reference",
+                "stylistic_inspiration",
+                "contextual_reference"
+              ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["critical", "high", "medium", "low"]
+          },
+          "research_needs": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "scene_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scene_id", "linked_target_ids", "notes"],
+        "properties": {
+          "scene_id": { "type": "string", "minLength": 1 },
+          "linked_target_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "intake_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

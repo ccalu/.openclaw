@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "s3.environment_location.output.v1",
+  "title": "S3 Environment Location Output",
+  "type": "object",
+  "required": ["contract_version", "operator_name", "job_id", "status", "entities", "generated_at"],
+  "properties": {
+    "contract_version": { "const": "s3.environment_location.output.v1" },
+    "operator_name": { "const": "environment_location_extractor" },
+    "job_id": { "type": "string" },
+    "video_id": { "type": "string" },
+    "account_id": { "type": "string" },
+    "language": { "type": "string" },
+    "status": { "type": "string", "enum": ["completed", "failed"] },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "entity_type", "canonical_label", "scene_ids", "visual_relevance_note"],
+        "properties": {
+          "entity_id": { "type": "string" },
+          "entity_type": { "type": "string", "enum": ["specific_place", "general_setting", "interior", "exterior", "environment", "location"] },
+          "canonical_label": { "type": "string" },
+          "scene_ids": { "type": "array", "items": { "type": "string" } },
+          "specificity_level": { "type": "string" },
+          "historical_context": { "type": "string" },
+          "geographic_context": { "type": "string" },
+          "visual_relevance_note": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "generated_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

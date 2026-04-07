@@ -1,0 +1,13 @@
+{
+  "kind": "b2_start",
+  "contract_version": "b2.bootstrap.v1",
+  "job_id": "dryrun_job_001",
+  "run_root": "runtime_realcheck\\run_002",
+  "b2_root": "runtime_realcheck\\run_002\\b2",
+  "account_id": "006",
+  "language": "pt-BR",
+  "inputs": {
+    "screenplay_analysis_path": "runtime_realcheck\\run_002\\upstream\\screenplay_analysis.json"
+  },
+  "mode": "s3_only"
+}

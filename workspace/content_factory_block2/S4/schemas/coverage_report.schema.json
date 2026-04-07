@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.coverage_report.v1",
+  "title": "S4 Coverage Report",
+  "description": "Aggregated coverage status across all research targets and scenes.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "metadata",
+    "target_coverage",
+    "scene_coverage",
+    "unresolved_gaps",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.coverage_report.v1"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["job_id", "video_id", "sector", "generated_at"],
+      "properties": {
+        "job_id": { "type": "string", "minLength": 1 },
+        "video_id": { "type": "string", "minLength": 1 },
+        "sector": { "type": "string" },
+        "generated_at": { "type": "string" }
+      }
+    },
+    "target_coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_id", "coverage_state", "supporting_candidate_ids", "notes"],
+        "properties": {
+          "target_id": { "type": "string", "minLength": 1 },
+          "coverage_state": {
+            "type": "string",
+            "enum": ["covered", "partially_covered", "inspiration_only", "unresolved"]
+          },
+          "supporting_candidate_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "scene_coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scene_id", "coverage_state", "linked_target_ids", "notes"],
+        "properties": {
+          "scene_id": { "type": "string", "minLength": 1 },
+          "coverage_state": {
+            "type": "string",
+            "enum": ["covered", "partially_covered", "inspiration_only", "unresolved"]
+          },
+          "linked_target_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "unresolved_gaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "language": "pt-BR",
+  "total_scenes": 3,
+  "video_context": {
+    "title": "A Queda do Rei Sol",
+    "description": "Resumo histórico sobre o fim do reinado de Luís XIV e a decadência da corte."
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "Luís XIV caminha pelos corredores de Versalhes enquanto cortesãos observam em silêncio."
+    },
+    {
+      "scene_id": "scene_002",
+      "scene_number": 2,
+      "text": "Madame de Maintenon acompanha o rei durante uma cerimônia privada, enquanto membros da corte aguardam ao fundo."
+    },
+    {
+      "scene_id": "scene_003",
+      "scene_number": 3,
+      "text": "Após a morte do rei, um grupo de nobres debate o futuro da França diante do vazio político."
+    }
+  ]
+}

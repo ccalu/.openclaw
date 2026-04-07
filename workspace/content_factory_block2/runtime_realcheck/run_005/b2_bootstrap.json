@@ -1,0 +1,15 @@
+{
+  "kind": "b2_start",
+  "contract_version": "b2.bootstrap.v1",
+  "job_id": "realrun_supervisor_005",
+  "video_id": "realcheck_video_005",
+  "run_root": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/run_005",
+  "b2_root": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/run_005/b2",
+  "account_id": "006",
+  "language": "pt-BR",
+  "inputs": {
+    "screenplay_analysis_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/run_005/upstream/screenplay_analysis.json",
+    "script_fetched_checkpoint_path": "C:/Users/User-OEM/.openclaw/workspace/content_factory_block2/runtime_realcheck/run_005/upstream/01_script_fetched.json"
+  },
+  "mode": "s3_only"
+}

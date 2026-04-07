@@ -1,0 +1,8 @@
+{
+  "event": "s3_failed",
+  "job_id": "realrun_human_subject_extractor_001",
+  "sector": "s3_visual_planning",
+  "failed_at": "2026-04-03T16:43:49.611228+00:00",
+  "status": "failed",
+  "error": "compiled_status=degraded_completed"
+}

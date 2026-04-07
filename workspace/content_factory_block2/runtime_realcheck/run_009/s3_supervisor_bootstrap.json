@@ -1,0 +1,17 @@
+{
+  "kind": "s3_start",
+  "contract_version": "s3.supervisor_bootstrap.v1",
+  "job_id": "realrun_supervisor_exec_009",
+  "video_id": "realrun_supervisor_exec_009",
+  "account_id": "006",
+  "language": "pt-BR",
+  "run_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009",
+  "sector_root": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning",
+  "source_package_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\inputs\\s3_source_package.json",
+  "checkpoints_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\checkpoints",
+  "operators_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\operators",
+  "compiled_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\compiled",
+  "logs_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\logs",
+  "dispatch_dir": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\dispatch",
+  "bootstrap_checkpoint_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_009\\b2\\sectors\\s3_visual_planning\\checkpoints\\s3_bootstrap_ready.json"
+}

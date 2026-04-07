@@ -1,0 +1,8 @@
+{
+  "job_id": "all_ops_cli_001",
+  "operator_run_id": "all_ops_cli_001_symbolic_event_extractor_2",
+  "status": "completed",
+  "output_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\output.json",
+  "checkpoint_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_012\\b2\\sectors\\s3_visual_planning\\operators\\symbolic_event_extractor\\checkpoint.json",
+  "updated_at": "2026-04-03T17:14:00.000000+00:00"
+}

@@ -1,0 +1,6 @@
+{
+  "event": "s3_supervisor_started",
+  "job_id": "real_supervisor_cli_001",
+  "started_at": "2026-04-03T16:50:31.905171+00:00",
+  "bootstrap_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_008\\s3_supervisor_bootstrap.json"
+}

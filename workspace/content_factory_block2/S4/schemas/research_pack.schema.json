@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "s4.research_pack.v1",
+  "title": "S4 Research Pack",
+  "description": "Final compiled output of S4 - all accepted research assets and metadata.",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "metadata",
+    "target_results",
+    "scene_results",
+    "asset_manifest",
+    "preview_manifest",
+    "capture_manifest",
+    "unresolved_gaps",
+    "warnings"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "const": "s4.research_pack.v1"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["job_id", "video_id", "account_id", "language", "sector", "generated_at", "status"],
+      "properties": {
+        "job_id": { "type": "string", "minLength": 1 },
+        "video_id": { "type": "string", "minLength": 1 },
+        "account_id": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "minLength": 2, "maxLength": 5 },
+        "sector": { "type": "string" },
+        "generated_at": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "target_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "target_id",
+          "canonical_label",
+          "best_factual_evidence_ids",
+          "best_visual_reference_ids",
+          "best_stylistic_inspiration_ids",
+          "coverage_state",
+          "notes"
+        ],
+        "properties": {
+          "target_id": { "type": "string", "minLength": 1 },
+          "canonical_label": { "type": "string", "minLength": 1 },
+          "best_factual_evidence_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "best_visual_reference_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "best_stylistic_inspiration_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "coverage_state": {
+            "type": "string",
+            "enum": ["covered", "partially_covered", "inspiration_only", "unresolved"]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "scene_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scene_id",
+          "linked_target_ids",
+          "recommended_candidate_ids",
+          "coverage_state",
+          "notes"
+        ],
+        "properties": {
+          "scene_id": { "type": "string", "minLength": 1 },
+          "linked_target_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "recommended_candidate_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "coverage_state": {
+            "type": "string",
+            "enum": ["covered", "partially_covered", "inspiration_only", "unresolved"]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "asset_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "target_id", "local_asset_path"],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "target_id": { "type": "string", "minLength": 1 },
+          "local_asset_path": { "type": "string" }
+        }
+      }
+    },
+    "preview_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "target_id", "preview_path"],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "target_id": { "type": "string", "minLength": 1 },
+          "preview_path": { "type": "string" }
+        }
+      }
+    },
+    "capture_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "target_id", "capture_path"],
+        "properties": {
+          "candidate_id": { "type": "string", "minLength": 1 },
+          "target_id": { "type": "string", "minLength": 1 },
+          "capture_path": { "type": "string" }
+        }
+      }
+    },
+    "unresolved_gaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

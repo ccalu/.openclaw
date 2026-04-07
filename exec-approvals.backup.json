@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "C:\\Users\\User-OEM\\.openclaw\\exec-approvals.sock",
+    "token": "kovfJS6xjMwyt2LUpNCUu5-RVyt87CnN"
+  },
+  "defaults": {},
+  "agents": {
+    "main": {
+      "allowlist": [
+        {
+          "id": "3351a8ec-34d6-4d16-bb7c-5b9541852b9c",
+          "pattern": "C:\\Program Files\\nodejs\\npm",
+          "lastUsedAt": 1775128757479,
+          "lastUsedCommand": "npm run setup",
+          "lastResolvedPath": "C:\\Program Files\\nodejs\\npm"
+        },
+        {
+          "id": "manual-powershell",
+          "pattern": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        },
+        {
+          "id": "manual-cmd",
+          "pattern": "C:\\Windows\\System32\\cmd.exe"
+        },
+        {
+          "id": "manual-git",
+          "pattern": "C:\\Program Files\\Git\\cmd\\git.exe"
+        },
+        {
+          "id": "manual-node",
+          "pattern": "C:\\Program Files\\nodejs\\node.exe"
+        },
+        {
+          "id": "manual-openclaw",
+          "pattern": "C:\\Users\\User-OEM\\AppData\\Roaming\\npm\\openclaw.cmd"
+        }
+      ]
+    }
+  }
+}

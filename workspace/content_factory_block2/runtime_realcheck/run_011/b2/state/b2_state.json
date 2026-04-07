@@ -1,0 +1,11 @@
+{
+  "block": "b2",
+  "mode": "s3_only",
+  "status": "running",
+  "current_stage": "s3",
+  "completed_stages": [],
+  "failed_stages": [],
+  "next_stage": null,
+  "last_event": "s3_requested",
+  "last_updated_at": "2026-04-03T17:05:00Z"
+}

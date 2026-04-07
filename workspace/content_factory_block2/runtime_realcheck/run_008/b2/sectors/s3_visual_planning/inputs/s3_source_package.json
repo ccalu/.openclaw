@@ -1,0 +1,34 @@
+{
+  "contract_version": "s3_source_package.v1",
+  "job_id": "real_supervisor_cli_001",
+  "video_id": "real_supervisor_cli_001",
+  "account_id": "006",
+  "language": "pt-BR",
+  "video_context": {
+    "video_name": "real_supervisor_cli_001",
+    "title": "Supervisor CLI Narrow Run",
+    "description": "",
+    "account_id": "006",
+    "language": "pt-BR"
+  },
+  "script_overview": {
+    "full_word_count": null,
+    "total_scenes": 1,
+    "source_row": null
+  },
+  "entity_focus": {
+    "priority_mode": "strict_precision",
+    "coverage_mode": "balanced"
+  },
+  "inputs": {
+    "screenplay_analysis_path": "C:\\Users\\User-OEM\\.openclaw\\workspace\\content_factory_block2\\runtime_realcheck\\run_008\\upstream\\screenplay_analysis.json"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "scene_number": 1,
+      "text": "A palace scene with a king and a crown."
+    }
+  ],
+  "generated_at": "2026-04-03T16:50:31.896171+00:00"
+}
