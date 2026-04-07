@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "S5 Scene Kit Pack",
+  "type": "object",
+  "required": ["pack_version", "sector", "video_id", "generated_at", "status", "scene_count_total", "scene_count_included", "ready_for_s6", "video_direction_frame", "scenes"],
+  "properties": {
+    "pack_version": { "type": "string" },
+    "sector": { "type": "string" },
+    "video_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "status": { "type": "string", "enum": ["completed", "failed", "partial"] },
+    "scene_count_total": { "type": "integer" },
+    "scene_count_included": { "type": "integer" },
+    "ready_for_s6": { "type": "boolean" },
+    "video_direction_frame": { "type": "object" },
+    "video_direction_frame_ref": { "type": "string" },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scene_id", "sequence_position", "status"],
+        "properties": {
+          "scene_id": { "type": "string" },
+          "sequence_position": { "type": "integer" },
+          "scene_summary": { "type": "string" },
+          "narrative_function": { "type": "string" },
+          "family_count": { "type": "integer" },
+          "scene_kit_spec_ref": { "type": "string" },
+          "status": { "type": "string", "enum": ["ready", "missing", "invalid"] },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "incomplete_scenes": { "type": "array", "items": { "type": "string" } },
+    "handoff_notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

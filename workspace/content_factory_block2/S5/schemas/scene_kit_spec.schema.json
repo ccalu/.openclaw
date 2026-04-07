@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scene Kit Spec",
+  "type": "object",
+  "required": ["spec_version", "scene_id", "scene_core", "scene_direction", "applied_global_constraints", "kit_strategy", "asset_families", "delivery_expectations"],
+  "properties": {
+    "spec_version": { "type": "string" },
+    "scene_id": { "type": "string" },
+    "scene_core": {
+      "type": "object",
+      "required": ["scene_id", "scene_summary", "narrative_function", "sequence_position"],
+      "properties": {
+        "scene_id": { "type": "string" },
+        "scene_text": { "type": "string" },
+        "scene_summary": { "type": "string" },
+        "narrative_function": { "type": "string" },
+        "sequence_position": { "type": "integer" }
+      }
+    },
+    "scene_direction": {
+      "type": "object",
+      "required": ["scene_thesis", "dominant_scene_mode"],
+      "properties": {
+        "scene_thesis": { "type": "string" },
+        "factual_anchors": { "type": "array", "items": { "type": "string" } },
+        "thematic_layer": { "type": "array", "items": { "type": "string" } },
+        "dominant_scene_mode": {
+          "type": "string",
+          "enum": ["factual", "grounded_cinematic", "evocative", "symbolic", "hybrid"]
+        }
+      }
+    },
+    "applied_global_constraints": {
+      "type": "object",
+      "properties": {
+        "dominant_visual_era": { "type": "string" },
+        "dominant_style_mode": { "type": "string" },
+        "grounding_baseline": { "type": "string" },
+        "allowed_generation_modes": { "type": "array", "items": { "type": "string" } },
+        "motion_allowed": { "type": "boolean" },
+        "kit_complexity_ceiling": { "type": "string" }
+      }
+    },
+    "kit_strategy": {
+      "type": "object",
+      "required": ["kit_goal", "kit_size_target"],
+      "properties": {
+        "kit_goal": { "type": "string" },
+        "kit_size_target": {
+          "type": "object",
+          "properties": {
+            "minimum": { "type": "integer" },
+            "ideal": { "type": "integer" },
+            "maximum": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "asset_families": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["family_id", "family_type", "family_intent", "priority", "grounding_strength", "creative_freedom_level", "preferred_generation_modes"],
+        "properties": {
+          "family_id": { "type": "string" },
+          "family_type": {
+            "type": "string",
+            "enum": ["hero", "support", "detail", "atmospheric", "transition", "fallback"]
+          },
+          "family_intent": { "type": "string" },
+          "priority": {
+            "type": "string",
+            "enum": ["required", "preferred", "optional"]
+          },
+          "target_asset_count": {
+            "type": "object",
+            "properties": {
+              "minimum": { "type": "integer" },
+              "ideal": { "type": "integer" },
+              "maximum": { "type": "integer" }
+            }
+          },
+          "grounding_strength": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "creative_freedom_level": {
+            "type": "string",
+            "enum": ["strict", "controlled", "moderate", "open"]
+          },
+          "preferred_generation_modes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "reference_inputs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "asset_id": { "type": "string" },
+                "source_target_id": { "type": "string" }
+              }
+            }
+          },
+          "preserve_requirements": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "avoid_literal_copy_notes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "editorial_notes": { "type": "string" }
+        }
+      }
+    },
+    "delivery_expectations": {
+      "type": "object",
+      "properties": {
+        "minimum_viable_delivery": { "type": "array", "items": { "type": "string" } },
+        "preferred_enrichment": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

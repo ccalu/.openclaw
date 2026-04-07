@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scene Direction Input Package",
+  "type": "object",
+  "required": ["package_version", "scene_id", "scene_core", "semantic_grounding", "reference_layer", "policy"],
+  "properties": {
+    "package_version": { "type": "string" },
+    "scene_id": { "type": "string" },
+    "scene_core": {
+      "type": "object",
+      "required": ["scene_id", "scene_text", "scene_number", "sequence_position", "scene_summary", "narrative_function"],
+      "properties": {
+        "scene_id": { "type": "string" },
+        "scene_text": { "type": "string" },
+        "scene_number": { "type": "integer" },
+        "sequence_position": { "type": "integer" },
+        "scene_summary": { "type": "string" },
+        "narrative_function": { "type": "string" }
+      }
+    },
+    "semantic_grounding": {
+      "type": "object",
+      "required": ["scene_entities", "factual_anchors"],
+      "properties": {
+        "scene_entities": { "type": "array", "items": { "type": "object" } },
+        "factual_anchors": { "type": "array", "items": { "type": "string" } },
+        "symbolic_anchors": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "reference_layer": {
+      "type": "object",
+      "required": ["relevant_targets", "reference_ready_assets"],
+      "properties": {
+        "relevant_targets": { "type": "array", "items": { "type": "string" } },
+        "reference_ready_assets": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "policy": {
+      "type": "object",
+      "required": ["motion_allowed"],
+      "properties": {
+        "motion_allowed": { "type": "boolean" },
+        "allowed_generation_modes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

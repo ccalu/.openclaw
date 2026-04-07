@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "S5 Supervisor Bootstrap",
+  "type": "object",
+  "required": [
+    "kind",
+    "contract_version",
+    "job_id",
+    "video_id",
+    "account_id",
+    "language",
+    "run_root",
+    "b2_root",
+    "sector_root",
+    "upstream"
+  ],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "const": "s5_start"
+    },
+    "contract_version": {
+      "type": "string"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "video_id": {
+      "type": "string"
+    },
+    "account_id": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "run_root": {
+      "type": "string"
+    },
+    "b2_root": {
+      "type": "string"
+    },
+    "sector_root": {
+      "type": "string"
+    },
+    "upstream": {
+      "type": "object",
+      "required": [
+        "source_package_path",
+        "compiled_entities_path",
+        "research_intake_path",
+        "reference_ready_asset_pool_path",
+        "video_context_path"
+      ],
+      "properties": {
+        "source_package_path": { "type": "string" },
+        "compiled_entities_path": { "type": "string" },
+        "research_intake_path": { "type": "string" },
+        "reference_ready_asset_pool_path": { "type": "string" },
+        "video_context_path": { "type": "string" }
+      }
+    }
+  }
+}
